@@ -28,6 +28,7 @@ foreground;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher_round.xml
 FrameLayout;C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\lp\45\jl\res\layout\bottomtablayout.xml
 item;C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\lp\45\jl\res\values\styles.xml
+item;obj\Debug\110\res\values\styles.xml
 LinearLayout;C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\lp\45\jl\res\layout\bottomtablayout.xml
 paths;C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\lp\45\jl\res\values\attrs.xml
