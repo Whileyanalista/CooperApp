@@ -23,8 +23,8 @@
 	.section	.rodata.env.str.1,"aMS",%progbits,1
 	.type	.L.env.str.1, %object
 .L.env.str.1:
-	.asciz	"com.companyname.cooperapp"
-	.size	.L.env.str.1, 26
+	.asciz	"com.coopmetropolitana.cooperapp"
+	.size	.L.env.str.1, 32
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -92,7 +92,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",%progbits,1
 	.type	.L.env.str.8, %object
 .L.env.str.8:
-	.asciz	"1353ec22-ca27-4447-936f-94a80633626f"
+	.asciz	"ff407974-4163-41b5-a1a8-c77c008459f7"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",%progbits,1
 	.type	.L.env.str.9, %object
