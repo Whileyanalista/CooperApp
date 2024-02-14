@@ -6,10 +6,55 @@
              IconImageSource="home.png" 
              >
     <ContentPage.Content >
-        <StackLayout>
-            <Label Text="Inicio"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout BackgroundColor="#E8ECEF">
+            <BoxView x:Name="BanerSuper" 
+                     BackgroundColor="#9DAF71"  
+                     HeightRequest="200" 
+                     RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1
+                     }"/>
+            
+            <BoxView 
+                BackgroundColor="White" 
+                HeightRequest="100" 
+                WidthRequest="100"
+                RelativeLayout.XConstraint="{
+                    ConstraintExpression Type=RelativeToParent, 
+                    ElementName=BanerSuper, 
+                    Property=Width,
+                    Factor=0.5,
+                    Constant=-50
+                }"
+                RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToView,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=30
+                }"/>
+
+            <BoxView 
+                BackgroundColor="#F8F9F4" 
+                HeightRequest="100" 
+                WidthRequest="350"
+                RelativeLayout.XConstraint="{
+                    ConstraintExpression Type=RelativeToParent, 
+                    ElementName=BanerSuper, 
+                    Property=Width,
+                    Factor=0.5,
+                    Constant= -175
+                }"
+                RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToView,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=150
+                }"/>
+
+
+
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
