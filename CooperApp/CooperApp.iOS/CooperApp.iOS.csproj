@@ -130,13 +130,13 @@
     <ImageAsset Include="Assets.xcassets\Logo.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Logo.imageset\Logo.png">
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\Logo1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Logo.imageset\Logo@2x.png">
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\Logo@2x1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Logo.imageset\Logo@3x.png">
+    <ImageAsset Include="Assets.xcassets\Logo.imageset\Logo@3x1.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Usuariol.imageset\Contents.json">
