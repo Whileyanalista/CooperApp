@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controleView="clr-namespace:CooperApp.View"             
+    x:Class="CooperApp.Paginas.TabbedPage.Inicio"
+    Title="Inicio"
+    IconImageSource="home.png"
+>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#E8ECEF">
+            <!--Baner topo tela homer-->
+            <RelativeLayout VerticalOptions="Start" >
+                <Frame x:Name="BanerSuper"
+                    BackgroundColor="#9DAF71"
+                    HeightRequest="200"
+                    RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1                    
+                     }" />
+                <!--Logo-->
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-60
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-60
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30}">
+                        <Image Source="Logo.png"
+                            Margin="-23" />
+                    </Frame>
+                </Frame>
+                <!---->
+                <!--Freime icon-->
+                <Frame
+                    CornerRadius="20"
+                    BackgroundColor="#F8F9F4"
+                    HeightRequest="70"
+                    WidthRequest="350"
+                    Padding="10"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    RelativeLayout.XConstraint="{
+                    ConstraintExpression Type=RelativeToParent, 
+                    ElementName=BanerSuper, 
+                    Property=Width,
+                    Factor=0.5,
+                    Constant= -185
+                }"
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToView,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=190
+                }">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <!-- Primeira Grid Collum/Row -->
+                        <Image Source="Volante.png"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Aspect="AspectFit"
+                        />
+                        <Frame Grid.Row="0"
+                            Grid.Column="0"
+                            CornerRadius="100"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Padding="5">
+                            <Frame BorderColor="White"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                CornerRadius="100"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                Margin="-10"
+                                Padding="2"
+                                BackgroundColor="#2E6012">
+                                <Label Text="10"
+                                    FontSize="10"
+                                    TextColor="White"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center" />
+                            </Frame>
+                        </Frame>
+                        <Label Text="Motoristas Online"
+                            FontAttributes="Bold"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            HorizontalTextAlignment="Center"
+                            FontSize="10"
+                        />
+                        <!---->
+                        <!--Segunda Grid Collum/Row-->
+                        <Image Source="Usuariol.png"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Aspect="AspectFit"
+                        />
+                        <Frame Grid.Row="0"
+                            Grid.Column="1"
+                            CornerRadius="100"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Padding="5"
+                        >
+                            <Frame
+                                BorderColor="White"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                CornerRadius="100"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                Margin="-10"
+                                Padding="2"
+                                BackgroundColor="#2E6012"
+                            >
+                                <Label Text="40"
+                                    FontSize="10"
+                                    TextColor="White"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center"
+                                />
+                            </Frame>
+                        </Frame>
+                        <Label Text="Usuários Online"
+                            FontAttributes="Bold"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalTextAlignment="Center"
+                            FontSize="10"
+                        />
+                        <!--Terceira Grid Collum/Row-->
+                        <Image Source="ponteiro.png"
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Aspect="AspectFit"
+                        />
+                        <Frame Grid.Row="0"
+                            Grid.Column="2"
+                            CornerRadius="100"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Padding="5"
+                        >
+                            <Frame
+                                BorderColor="White"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                CornerRadius="100"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                Margin="-9"
+                                Padding="2"
+                                BackgroundColor="#2E6012"
+                            >
+                                <Label
+                                    Text="7"
+                                    FontSize="10"
+                                    TextColor="White"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center"
+                                />
+                            </Frame>
+                        </Frame>
+                        <Label Text="Pontos Ativos"
+                            FontAttributes="Bold"
+                            Grid.Row="1"
+                            Grid.Column="2"
+                            HorizontalTextAlignment="Center"
+                            FontSize="10"
+                        />
+                        <!---->
+                    </Grid>
+                </Frame>
+                <!---->                
+            </RelativeLayout>
+            <!---->
+
+            <ScrollView>
+                <!--Carde tela Home-->
+                <StackLayout >
+                    <controleView:ViewHome/>
+                    <controleView:ViewHome/>
+                    <controleView:ViewHome/>
+                    <controleView:ViewHome/>
+                    <controleView:ViewHome/>
+                    <controleView:ViewHome/>
+                    <controleView:ViewHome/>
+                </StackLayout>               
+                <!---->
+            </ScrollView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
