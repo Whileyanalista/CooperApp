@@ -12,7 +12,7 @@
                         <BoxView Color="{Binding corStatus}"
                         HeightRequest="150"
                         WidthRequest="10"
-                        Margin="20,0,0,0" 
+                        Margin="20,0,0,5" 
                         />
                     </Grid>                    
                     <!--Estrutura do card-->
