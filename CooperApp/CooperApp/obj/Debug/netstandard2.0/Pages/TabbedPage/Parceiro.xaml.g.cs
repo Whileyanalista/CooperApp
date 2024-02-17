@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.Paginas.TabbedPage.Parceiro.xaml", "Paginas/TabbedPage/Parceiro.xaml", typeof(global::CooperApp.Paginas.TabbedPage.Parceiro))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.Pages.TabbedPage.Parceiro.xaml", "Pages/TabbedPage/Parceiro.xaml", typeof(global::CooperApp.Paginas.TabbedPage.Parceiro))]
 
 namespace CooperApp.Paginas.TabbedPage {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Paginas\\TabbedPage\\Parceiro.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TabbedPage\\Parceiro.xaml")]
     public partial class Parceiro : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

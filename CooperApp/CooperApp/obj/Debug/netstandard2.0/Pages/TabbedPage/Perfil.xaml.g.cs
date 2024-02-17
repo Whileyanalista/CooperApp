@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.Paginas.TabbedPage.Perfil.xaml", "Paginas/TabbedPage/Perfil.xaml", typeof(global::CooperApp.Paginas.TabbedPage.Perfil))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.Pages.TabbedPage.Perfil.xaml", "Pages/TabbedPage/Perfil.xaml", typeof(global::CooperApp.Paginas.TabbedPage.Perfil))]
 
 namespace CooperApp.Paginas.TabbedPage {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Paginas\\TabbedPage\\Perfil.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TabbedPage\\Perfil.xaml")]
     public partial class Perfil : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

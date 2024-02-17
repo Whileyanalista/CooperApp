@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.Paginas.TabbedPage.Inicio.xaml", "Paginas/TabbedPage/Inicio.xaml", typeof(global::CooperApp.Paginas.TabbedPage.Inicio))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.Pages.TabbedPage.Inicio.xaml", "Pages/TabbedPage/Inicio.xaml", typeof(global::CooperApp.Paginas.TabbedPage.Inicio))]
 
 namespace CooperApp.Paginas.TabbedPage {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Paginas\\TabbedPage\\Inicio.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\TabbedPage\\Inicio.xaml")]
     public partial class Inicio : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.BoxView BanerSuper;
+        private global::Xamarin.Forms.Frame BanerSuper;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Inicio));
-            BanerSuper = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.BoxView>(this, "BanerSuper");
+            BanerSuper = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "BanerSuper");
         }
     }
 }
