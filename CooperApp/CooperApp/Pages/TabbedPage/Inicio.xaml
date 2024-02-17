@@ -18,6 +18,7 @@
                          Property=Width, Factor=1                    
                      }" />
                 <!--Logo-->
+<<<<<<< HEAD
                 <StackLayout  RelativeLayout.XConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         ElementName=BanerSuper, 
@@ -34,6 +35,9 @@
                     }"
                              >
                     <Frame
+=======
+                <Frame
+>>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
                     CornerRadius="100"
                     HeightRequest="110"
                     WidthRequest="110"
@@ -52,10 +56,17 @@
                         ConstraintExpression Type=RelativeToView,
                         ElementName=BanerSuper,
                         Property=Y,
+<<<<<<< HEAD
                         Factor=0.5,
                         Constant=0
                     }">
                         <Frame
+=======
+                        Factor=1,
+                        Constant=30
+                    }">
+                    <Frame
+>>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
                         CornerRadius="100"
                         HeightRequest="80"
                         WidthRequest="80"
@@ -73,6 +84,7 @@
                         ElementName=BanerSuper,
                         Property=Y,
                         Factor=1,
+<<<<<<< HEAD
                         Constant= 30
                             }">
                            <Image Source="Logo.png"
@@ -88,6 +100,13 @@
                            Text="Ponto de Atendimento"
                            />
                 </StackLayout>
+=======
+                        Constant=30}">
+                        <Image Source="Logo.png"
+                            Margin="-23" />
+                    </Frame>
+                </Frame>
+>>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
                 <!---->
                 <!--Freime icon-->
                 <Frame
@@ -246,8 +265,12 @@
                         <!---->
                     </Grid>
                 </Frame>
+<<<<<<< HEAD
                 <!---->
                 
+=======
+                <!---->                
+>>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
             </RelativeLayout>
             <!---->
 
@@ -264,6 +287,11 @@
                 </StackLayout>               
                 <!---->
             </ScrollView>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
