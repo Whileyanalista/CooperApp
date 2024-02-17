@@ -16,13 +16,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Paginas\TabbedPage\Inicio.xaml">
+    <EmbeddedResource Update="Pages\TabbedPage\Inicio.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\TabbedPage\Parceiro.xaml">
+    <EmbeddedResource Update="Pages\TabbedPage\Parceiro.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Paginas\TabbedPage\Perfil.xaml">
+    <EmbeddedResource Update="Pages\TabbedPage\Perfil.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\ViewHome.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
