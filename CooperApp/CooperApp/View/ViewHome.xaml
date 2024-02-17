@@ -1,50 +1,63 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CooperApp.View.ViewHome">
+             x:Class="CooperApp.View.ViewHome"
+             x:Name="viewHome"
+             >
   <ContentView.Content>
-      <StackLayout>
+      <StackLayout BindingContext="{x:Reference viewHome}">
             <Frame Padding="0" Margin="20,20,20,0" CornerRadius="15" BackgroundColor="White">
                 <StackLayout  Orientation="Horizontal" Spacing="0">
-                    <BoxView BackgroundColor="#9DAF71"
+                    <Grid BackgroundColor="White" Padding="0">
+                        <BoxView Color="{Binding corStatus}"
                         HeightRequest="150"
                         WidthRequest="10"
-                        Margin="20,0,0,0" />
+                        Margin="20,0,0,0" 
+                        />
+                    </Grid>                    
+                    <!--Estrutura do card-->
                     <Frame HasShadow="False"
                         BackgroundColor="White"
                         HorizontalOptions="FillAndExpand"
-                           Padding="7"
+                        Padding="7"
                     >
                         <StackLayout >
-                            <Label Text="PA Estação do Metrô"
+                            <Label Text="{Binding PontoAtendimento}"
                                 FontSize="20" />
-                            <BoxView BackgroundColor="Gray"
+                            <BoxView 
+                                BackgroundColor="Gray"
                                 HeightRequest="1" />
-                            <Label Text="9 Passageiros no  PA" />
+                            <Label 
+                                Text="{Binding QuantidadePassageiro}" />
                             <StackLayout Orientation="Horizontal">
                                 <Frame BackgroundColor="#F4F8FC"
                                     HorizontalOptions="FillAndExpand"
                                     HasShadow="False"
                                     CornerRadius="10"                                       
-                                >
-                                    <StackLayout Orientation="Horizontal"  Padding="0">
+                                    >
+                                    <StackLayout Orientation="Horizontal"  
+                                                 Padding="0">
                                         <Image Source="Volante.png"
-                                            HeightRequest="20" />
-                                        <Label Text="Motorista a 100m"
-                                            FontAttributes="Bold"
-                                            FontSize="13"
-                                            VerticalOptions="Center" />
+                                               HeightRequest="20" 
+                                               />
+                                        <Label Text="{Binding MotoristaPa}"
+                                                FontAttributes="Bold"
+                                                FontSize="13"
+                                                VerticalOptions="Center" 
+                                               />
                                     </StackLayout>
                                 </Frame>
                                 <Frame BackgroundColor="#F4F8FC"
-                                    HorizontalOptions="FillAndExpand"
-                                    HasShadow="False"
-                                    CornerRadius="10"                                        
+                                        HorizontalOptions="FillAndExpand"
+                                        HasShadow="False"
+                                        CornerRadius="10"                                        
                                 >
-                                    <StackLayout Orientation="Horizontal"  Padding="0">
+                                    <StackLayout Orientation="Horizontal"  
+                                                 Padding="0">
                                         <Image Source="ponteiro.png"
                                             HeightRequest="20" />
-                                        <Label Text="PA a 2k"
+                                        <Label 
+                                            Text="{Binding DistanciaPa}"
                                             FontAttributes="Bold"
                                             FontSize="13"
                                             VerticalOptions="Center" />
