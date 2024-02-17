@@ -18,7 +18,6 @@
                          Property=Width, Factor=1                    
                      }" />
                 <!--Logo-->
-<<<<<<< HEAD
                 <StackLayout  RelativeLayout.XConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         ElementName=BanerSuper, 
@@ -35,9 +34,6 @@
                     }"
                              >
                     <Frame
-=======
-                <Frame
->>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
                     CornerRadius="100"
                     HeightRequest="110"
                     WidthRequest="110"
@@ -56,17 +52,10 @@
                         ConstraintExpression Type=RelativeToView,
                         ElementName=BanerSuper,
                         Property=Y,
-<<<<<<< HEAD
                         Factor=0.5,
                         Constant=0
                     }">
                         <Frame
-=======
-                        Factor=1,
-                        Constant=30
-                    }">
-                    <Frame
->>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
                         CornerRadius="100"
                         HeightRequest="80"
                         WidthRequest="80"
@@ -84,10 +73,9 @@
                         ElementName=BanerSuper,
                         Property=Y,
                         Factor=1,
-<<<<<<< HEAD
                         Constant= 30
                             }">
-                           <Image Source="Logo.png"
+                            <Image Source="Logo.png"
                             Margin="-23"
                            />
                         </Frame>
@@ -100,13 +88,6 @@
                            Text="Ponto de Atendimento"
                            />
                 </StackLayout>
-=======
-                        Constant=30}">
-                        <Image Source="Logo.png"
-                            Margin="-23" />
-                    </Frame>
-                </Frame>
->>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
                 <!---->
                 <!--Freime icon-->
                 <Frame
@@ -265,33 +246,33 @@
                         <!---->
                     </Grid>
                 </Frame>
-<<<<<<< HEAD
                 <!---->
-                
-=======
-                <!---->                
->>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
             </RelativeLayout>
             <!---->
-
             <ScrollView>
                 <!--Carde tela Home-->
                 <StackLayout >
-                    <controleView:ViewHome/>
-                    <controleView:ViewHome/>
-                    <controleView:ViewHome/>
-                    <controleView:ViewHome/>
-                    <controleView:ViewHome/>
-                    <controleView:ViewHome/>
-                    <controleView:ViewHome/>
-                </StackLayout>               
+                    <controleView:ViewHome 
+                        PontoAtendimento = "PA Gênova" 
+                        QuantidadePassageiro = "2 passageiros no PA" 
+                        MotoristaPa = "Motorista a 1k do PA" 
+                        DistanciaPa = "PA a 1m"
+                        corStatus = "#9DAF71"/>
+                    <controleView:ViewHome 
+                        PontoAtendimento = "PA Estação do Metrô" 
+                        QuantidadePassageiro = "3 passageiros no PA" 
+                        MotoristaPa = "Sem motorista no PA" 
+                        DistanciaPa = "PA a 2m"
+                        corStatus = "Gray"/>
+                    <controleView:ViewHome 
+                        PontoAtendimento = "PA Vila Romana" 
+                        QuantidadePassageiro = "1 passageiro no PA" 
+                        MotoristaPa = "Motorista a 100m do PA" 
+                        DistanciaPa = "PA a 1k"
+                        corStatus = "#9DAF71"/>                    
+                </StackLayout>
                 <!---->
             </ScrollView>
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 826b5df87af1390325853b2d93fbbce289556ee1
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
