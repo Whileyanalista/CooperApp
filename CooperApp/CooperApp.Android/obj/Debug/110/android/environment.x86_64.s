@@ -72,11 +72,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-<<<<<<< HEAD
-	.asciz	"ba2af3c8-82a5-4474-b785-96ae4412f958"
-=======
-	.asciz	"35ee28b1-cde7-423c-9c4f-54ea7be73930"
->>>>>>> Coop_Login
+	.asciz	"2e4fa729-1588-4231-a92f-3ffc42cac2a9"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
