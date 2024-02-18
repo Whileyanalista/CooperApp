@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CooperApp.Pages.Page1">
+    <ContentPage.Content>
+       <RelativeLayout VerticalOptions="Start" >
+                <Frame x:Name="BanerSuper"
+                    BackgroundColor="#9DAF71"
+                    HeightRequest="300"
+                    RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1                    
+                     }" />
+                <!--Logo-->
+                <StackLayout  RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-90
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }"
+                             >
+                    <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-60
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                        <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-60
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant= 30
+                            }">
+                            <Image Source="Logo.png"
+                            Margin="-23"
+                           />
+                        </Frame>
+                    </Frame>
+                    <Label 
+                           FontAttributes="Bold"
+                           FontSize="21"
+                           Padding="20"
+                           Margin="-10"
+                           TextColor="#707070"
+                           Text="Tela de Login"
+                           />
+                </StackLayout>
+                <!---->
+                <!--Freime-->
+            <Frame
+                CornerRadius="100"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                    
+                    }"
+                    RelativeLayout.HeightConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, 
+                         Factor=2                    
+                     }"
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220
+                }">
+
+                <StackLayout>
+                    <Label Text="Bem vindo!"
+                           Padding="0,90,0,0"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           FontSize="40"
+                           TextColor="#707070"
+                           />
+                    <Label Text="Informe seu Login"
+                           FontSize="18"
+                           TextColor="#707070"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"/>
+
+                    <StackLayout HeightRequest="100"
+                                 WidthRequest="10"
+                                 Padding="60,50,60,0"
+                                 >
+                        <Entry Placeholder="Usuario"
+                               TextColor="#707070"
+                               PlaceholderColor="#707070"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="17"/>
+
+                        <Entry Placeholder="Senha"
+                               TextColor="#707070"
+                               PlaceholderColor="#707070"
+                               HorizontalOptions="FillAndExpand"                               
+                               IsPassword="True"
+                               FontSize="17"/>
+                        <Button Text="LOGIN" 
+                                FontAttributes="Bold"
+                                TextColor="#707070"
+                                BackgroundColor="#9DAF71"
+                                Margin="0,30,0,0"
+                                WidthRequest="5"
+                                HeightRequest="60"
+                                CornerRadius="50"
+                            />
+                        <StackLayout 
+                            Margin="0,15,0,0"
+                            Orientation="Horizontal" 
+                            HorizontalOptions="Center"
+                            >
+                            <Label Text="Não tem cadastro?" 
+                                   FontSize="15"/>
+                            
+                            <Label Text="Registrar-se!" 
+                                   TextColor="#3611FC"
+                                   FontSize="15"/>
+                            
+                        </StackLayout>
+                        <Label Text="Redefinir senha" 
+                               TextColor="#3611FC" 
+                               HorizontalOptions="Center"
+                               FontSize="15"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </Frame>
+                <!---->
+            </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
