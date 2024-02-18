@@ -18,3 +18,19 @@ Um card contendo:
 
 Cards:
 Possibilita identificar os PAs, a distância levando em consideração o ponto de origem do GPS que consulta, motorista se deslocando para o local
+
+
+História tela Login:
+
+Está tela retorna para o usuário:
+Local para escrever o usuario/senha.
+Botão para confirmar.
+E um link para registro e redefinir senha
+
+Leyout:
+A logo sentralizada.
+Uma mensagem de boas vindas.
+Uma solicitação para que os dados seja informado.
+
+funcionalidade:
+Possibilita que o usuario redefina a senha por e-mail.

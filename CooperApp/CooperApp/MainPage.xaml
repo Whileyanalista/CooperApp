@@ -8,8 +8,10 @@
              UnselectedTabColor="#707070"
              x:Class="CooperApp.MainPage"    
              xmlns:tabbedPage ="clr-namespace:CooperApp.Paginas.TabbedPage"
+             xmlns:tabbedPage1 ="clr-namespace:CooperApp.Pages"
             >
     <tabbedPage:Inicio/>
     <tabbedPage:Parceiro/>
-    <tabbedPage:Perfil/>    
+    <tabbedPage:Perfil/>
+    <tabbedPage1:Page1/>
 </TabbedPage>
