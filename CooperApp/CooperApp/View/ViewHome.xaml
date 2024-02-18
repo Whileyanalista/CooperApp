@@ -12,7 +12,11 @@
                         <BoxView Color="{Binding corStatus}"
                         HeightRequest="150"
                         WidthRequest="10"
+<<<<<<< HEAD
                         Margin="20,0,0,5" 
+=======
+                        Margin="20,0,0,0" 
+>>>>>>> Coop_Login
                         />
                     </Grid>                    
                     <!--Estrutura do card-->

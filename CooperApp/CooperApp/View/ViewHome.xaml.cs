@@ -46,5 +46,6 @@ namespace CooperApp.View
         {
             InitializeComponent();
         }
+
     }
 }

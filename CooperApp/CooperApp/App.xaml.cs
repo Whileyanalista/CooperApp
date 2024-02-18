@@ -10,7 +10,9 @@ namespace CooperApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Pages.Page1();
+
+            //MainPage = new MainPage();
         }
 
         protected override void OnStart()
