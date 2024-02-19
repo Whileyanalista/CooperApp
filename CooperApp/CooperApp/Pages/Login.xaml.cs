@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace CooperApp.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class Login : ContentPage
     {
-        public Page1()
+        public Login()
         {
             InitializeComponent();
         }

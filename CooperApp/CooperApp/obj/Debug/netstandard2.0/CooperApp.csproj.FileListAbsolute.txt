@@ -17,3 +17,4 @@ C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\P
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Perfil.xaml.g.cs
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\View\ViewHome.xaml.g.cs
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\Login.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\Cadastro.xaml.g.cs

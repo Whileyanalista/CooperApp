@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CooperApp.Pages.Page1">
+             x:Class="CooperApp.Pages.Login"
+             Title="Login">
     <ContentPage.Content>
-       <RelativeLayout VerticalOptions="Start" >
-                <Frame x:Name="BanerSuper"
+        <RelativeLayout VerticalOptions="Start" >
+            <Frame x:Name="BanerSuper"
                     BackgroundColor="#9DAF71"
                     HeightRequest="300"
                     RelativeLayout.WidthConstraint="{
                          ConstraintExpression Type=RelativeToParent, 
                          Property=Width, Factor=1                    
                      }" />
-                <!--Logo-->
-                <StackLayout  RelativeLayout.XConstraint="{
+            <!--Logo-->
+            <StackLayout  RelativeLayout.XConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         ElementName=BanerSuper, 
                         Property=Width,
@@ -27,7 +28,7 @@
                         Constant=20
                     }"
                              >
-                    <Frame
+                <Frame
                     CornerRadius="100"
                     HeightRequest="110"
                     WidthRequest="110"
@@ -49,7 +50,7 @@
                         Factor=0.5,
                         Constant=0
                     }">
-                        <Frame
+                    <Frame
                         CornerRadius="100"
                         HeightRequest="80"
                         WidthRequest="80"
@@ -72,19 +73,19 @@
                             <Image Source="Logo.png"
                             Margin="-23"
                            />
-                        </Frame>
                     </Frame>
-                    <Label 
-                           FontAttributes="Bold"
-                           FontSize="21"
-                           Padding="20"
-                           Margin="-10"
-                           TextColor="#707070"
-                           Text="Tela de Login"
+                </Frame>
+                <Label 
+                        FontAttributes="Bold"
+                        FontSize="21"
+                        Padding="20"
+                        Margin="-10"
+                        TextColor="#707070"
+                        Text="Tela de Login"                    
                            />
-                </StackLayout>
-                <!---->
-                <!--Freime-->
+            </StackLayout>
+            <!---->
+            <!--Freime-->
             <Frame
                 CornerRadius="100"
                 BackgroundColor="#E8ECEF"
@@ -106,36 +107,38 @@
                     Constant=220
                 }">
 
-                <StackLayout>
-                    <Label Text="Bem vindo!"
-                           Padding="0,90,0,0"
+                <StackLayout Padding="0,50,0,0" >
+                    <Label Text="Bem vindo!"                           
                            HorizontalTextAlignment="Center"
                            FontAttributes="Bold"
                            FontSize="40"
                            TextColor="#707070"
                            />
-                    <Label Text="Informe seu Login"
+                    <Label Text="Informe seus dados"
                            FontSize="18"
                            TextColor="#707070"
                            VerticalOptions="Center"
                            HorizontalOptions="Center"/>
-
-                    <StackLayout HeightRequest="100"
-                                 WidthRequest="10"
-                                 Padding="60,50,60,0"
+                   
+                    <StackLayout HorizontalOptions="Center"
+                                 WidthRequest="350"
+                                 Padding="30"
                                  >
                         <Entry Placeholder="Usuario"
                                TextColor="#707070"
                                PlaceholderColor="#707070"
                                HorizontalOptions="FillAndExpand"
-                               FontSize="17"/>
+                               FontSize="17"
+                               ReturnType="Next"/>
 
                         <Entry Placeholder="Senha"
                                TextColor="#707070"
                                PlaceholderColor="#707070"
                                HorizontalOptions="FillAndExpand"                               
                                IsPassword="True"
-                               FontSize="17"/>
+                               FontSize="17"
+                               ReturnType="Next"/>
+                        
                         <Button Text="LOGIN" 
                                 FontAttributes="Bold"
                                 TextColor="#707070"
@@ -145,28 +148,31 @@
                                 HeightRequest="60"
                                 CornerRadius="50"
                             />
+
                         <StackLayout 
                             Margin="0,15,0,0"
                             Orientation="Horizontal" 
-                            HorizontalOptions="Center"
-                            >
+                            HorizontalOptions="Center">
+                            
                             <Label Text="Não tem cadastro?" 
                                    FontSize="15"/>
-                            
+
                             <Label Text="Registrar-se!" 
                                    TextColor="#3611FC"
                                    FontSize="15"/>
-                            
+
                         </StackLayout>
-                        <Label Text="Redefinir senha" 
+                        
+                        <Label Text="Redefinir senha." 
                                TextColor="#3611FC" 
                                HorizontalOptions="Center"
                                FontSize="15"/>
+                        
                     </StackLayout>
-                    
+                   
                 </StackLayout>
             </Frame>
-                <!---->
-            </RelativeLayout>
+            <!---->
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

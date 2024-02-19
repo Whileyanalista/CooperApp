@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CooperApp.Pages.Cadastro"
+    Title="Cadastro">
+    <ContentPage.Content>
+        <RelativeLayout VerticalOptions="Start">
+            <Frame x:Name="BanerSuper"
+                BackgroundColor="#9DAF71"
+                HeightRequest="300"
+                RelativeLayout.WidthConstraint="{
+                ConstraintExpression Type=RelativeToParent, 
+                Property=Width, Factor=1}" />
+
+            <!--Logo-->
+            <StackLayout
+                RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-110
+                    }"
+                RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }"
+            >
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant= 30
+                            }">
+                        <Image Source="Logo.png"
+                            Margin="-23"
+                        />
+                    </Frame>
+                </Frame>
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="21"
+                    Padding="20"
+                    Margin="-10"
+                    TextColor="#707070"
+                    Text="Tela de Cadastro"
+                />
+            </StackLayout>
+            <!---->
+            <!--Freme
+            Geral-->
+            <Frame
+                CornerRadius="100"
+                HeightRequest="800"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                   
+                    }"                
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220}">
+
+                <!--Conteudo-->
+                <StackLayout>
+                    <Label Text="Bem vindo!"
+                        Padding="0,90,0,0"
+                        HorizontalTextAlignment="Center"
+                        FontAttributes="Bold"
+                        FontSize="40"
+                        TextColor="#707070"
+                    />
+                    <Label Text="Informe seus dados"
+                        FontSize="18"
+                        TextColor="#707070"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+
+                    <ScrollView>
+                        <StackLayout Padding="15,10,15,50"
+                        Margin="30">
+                            <Label Text="Dados Pessoas:" FontSize="15" />
+                            <Frame HasShadow="False"
+                            Margin="0,0,0,10"
+                            BorderColor="#707070"
+                            BackgroundColor="#E8ECEF"
+                            VerticalOptions="FillAndExpand">
+                                <StackLayout>
+                                    <Entry Placeholder="Nome Completo"
+                                       TextColor="#707070"
+                                       PlaceholderColor="#707070"
+                                       HorizontalOptions="FillAndExpand"
+                                       FontSize="17"
+                                           ReturnType="Next"/>
+
+                                    <Entry Placeholder="E-mail"
+                               TextColor="#707070"
+                               PlaceholderColor="#707070"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="17"/>
+
+                                    <Entry Placeholder="Condominio"
+                                       TextColor="#707070"
+                                       PlaceholderColor="#707070"
+                                       HorizontalOptions="FillAndExpand"
+                                       FontSize="17"
+                                           ReturnType="Next"/>
+
+                                    <Entry Placeholder="CEP"
+                                           Keyboard="Numeric"
+                                           TextColor="#707070"
+                                           PlaceholderColor="#707070"
+                                           HorizontalOptions="FillAndExpand"
+                                           FontSize="17"
+                                           ReturnType="Next"/>  
+
+                                    <Entry Placeholder="RUA"
+                               TextColor="#707070"
+                               PlaceholderColor="#707070"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="17"/>
+
+                                    <Entry  x:Name="EntryCel"
+                                            TextChanged="EntryCel_TextChanged"
+                                            Placeholder="Cel (##)#####-####"
+                                            TextColor="#707070"
+                                            PlaceholderColor="#707070"
+                                            HorizontalOptions="FillAndExpand"
+                                            Keyboard="Telephone"
+                                            FontSize="17"
+                                            ReturnType="Next"
+                                            MaxLength="15"/>
+
+                                    <Entry x:Name="EntryCPF"
+                                           MaxLength="14"
+                                           TextChanged="EntryCPF_TextChanged"
+                                           Placeholder="CPF ###.###-#####"
+                                           TextColor="#707070"
+                                           PlaceholderColor="#707070"
+                                           HorizontalOptions="FillAndExpand"
+                                           FontSize="17"
+                                           Keyboard="Numeric"
+                                           ReturnType="Next"/> 
+                                    
+                                    <Label Text="Dados de Acesso:" FontSize="15" />
+                                    <Frame BackgroundColor="#E8ECEF" 
+                                           HasShadow="False"
+                                           BorderColor="#707070"                            
+                                           >
+                                        <StackLayout>
+                                            <Entry Placeholder="Usuario"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#707070"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"/>
+
+                                            <Entry Placeholder="Senha"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#707070"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>
+                                            
+                                        </StackLayout>
+                                    </Frame>
+                                    <StackLayout Orientation="Horizontal" Margin="0,10">
+                                        <CheckBox />
+                                        <Label Text="Passageiro"
+                                               VerticalOptions="Center"
+                                               FontSize="17"/>
+                                        <CheckBox />
+                                        <Label Text="Parceiro/Motorista"
+                                               VerticalOptions="Center"
+                                               FontSize="17"/>
+                                    </StackLayout>
+                                    <Button Text="Salvar"
+                                            FontAttributes="Bold"
+                                            TextColor="#707070"
+                                            BackgroundColor="#9DAF71"
+                                            CornerRadius="50"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+                <!---->
+            </Frame>
+            <!---->
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

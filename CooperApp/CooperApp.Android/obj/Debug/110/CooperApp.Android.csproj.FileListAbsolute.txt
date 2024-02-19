@@ -96,7 +96,6 @@ C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\u
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxxhdpi\usuariol.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-hdpi\volante.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-ldpi\volante.png
-C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\volante.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xhdpi\volante.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\volante.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxxhdpi\volante.png
@@ -625,3 +624,4 @@ C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\stamp\_ConvertResourc
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\motorista.png
