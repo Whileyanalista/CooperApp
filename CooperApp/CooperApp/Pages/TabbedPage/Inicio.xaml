@@ -7,23 +7,22 @@
     IconImageSource="home.png"
 >
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#E8ECEF">
-            <!--Baner topo tela homer-->
-            <RelativeLayout VerticalOptions="Start" >
-                <Frame x:Name="BanerSuper"
+
+        <RelativeLayout VerticalOptions="Start" >
+            <Frame x:Name="BanerSuper"
                     BackgroundColor="#9DAF71"
-                    HeightRequest="200"
+                    HeightRequest="300"
                     RelativeLayout.WidthConstraint="{
                          ConstraintExpression Type=RelativeToParent, 
                          Property=Width, Factor=1                    
                      }" />
-                <!--Logo-->
-                <StackLayout  RelativeLayout.XConstraint="{
+            <!--Logo-->
+            <StackLayout  RelativeLayout.XConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=-117
+                        Constant=-150
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -33,7 +32,7 @@
                         Constant=20
                     }"
                              >
-                    <Frame
+                <Frame
                     CornerRadius="100"
                     HeightRequest="110"
                     WidthRequest="110"
@@ -55,7 +54,7 @@
                         Factor=0.5,
                         Constant=0
                     }">
-                        <Frame
+                    <Frame
                         CornerRadius="100"
                         HeightRequest="80"
                         WidthRequest="80"
@@ -73,24 +72,77 @@
                         ElementName=BanerSuper,
                         Property=Y,
                         Factor=1,
-                        Constant= 30
+                        Constant=30
                             }">
-                            <Image Source="Logo.png"
+                        <Image Source="Logo.png"
                             Margin="-23"
                            />
-                        </Frame>
                     </Frame>
-                    <Label 
-                           FontAttributes="Bold"
-                           FontSize="20"
-                           Padding="20"
-                           Margin="-23"
-                           Text="Ponto de Atendimento"
+                </Frame>
+                <Label 
+                        FontAttributes="Bold"
+                        FontSize="21"
+                        Padding="20"
+                        Margin="-10"
+                        TextColor="#707070"
+                        Text="Ponto de Atendimento"                    
                            />
+            </StackLayout>
+            <!---->
+            <!--Freime-->
+
+            
+            <Frame  
+                x:Name="bakgroud"
+                CornerRadius="100"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                    
+                    }"
+                    RelativeLayout.HeightConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, 
+                         Factor=2                    
+                     }"
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220
+                }">                
+                <StackLayout >
+                    <ScrollView>
+                        <!--Carde tela Home-->
+                        <StackLayout Padding="0,70">
+                            <controleView:ViewHome 
+                        PontoAtendimento = "PA Gênova" 
+                        QuantidadePassageiro = "2 passageiros no PA" 
+                        MotoristaPa = "Motorista a 1k do PA" 
+                        DistanciaPa = "PA a 1m"
+                        corStatus = "#9DAF71"/>
+                            <controleView:ViewHome 
+                        PontoAtendimento = "PA Estação do Metrô" 
+                        QuantidadePassageiro = "3 passageiros no PA" 
+                        MotoristaPa = "Sem motorista no PA" 
+                        DistanciaPa = "PA a 2m"
+                        corStatus = "Gray"/>
+                            <controleView:ViewHome 
+                        PontoAtendimento = "PA Vila Romana" 
+                        QuantidadePassageiro = "1 passageiro no PA" 
+                        MotoristaPa = "Motorista a 100m do PA" 
+                        DistanciaPa = "PA a 1k"
+                        corStatus = "#9DAF71"/>
+                        </StackLayout>
+                        <!---->
+                    </ScrollView>
                 </StackLayout>
-                <!---->
-                <!--Freime icon-->
-                <Frame
+            </Frame>
+            <!---->
+            <!--Freime icon-->
+            <Frame
                     CornerRadius="20"
                     BackgroundColor="#F8F9F4"
                     HeightRequest="70"
@@ -100,41 +152,41 @@
                     HorizontalOptions="Center"
                     RelativeLayout.XConstraint="{
                     ConstraintExpression Type=RelativeToParent, 
-                    ElementName=BanerSuper, 
+                    ElementName=bakgroud, 
                     Property=Width,
                     Factor=0.5,
                     Constant= -185
                 }"
                     RelativeLayout.YConstraint="{
                     ConstraintExpression Type=RelativeToView,
-                    ElementName=BanerSuper,
+                    ElementName=bakgroud,
                     Property=Y,
                     Factor=1,
-                    Constant=190
+                    Constant=-20
                 }">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="50" />
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />
-                            <ColumnDefinition />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <!-- Primeira Grid Collum/Row -->
-                        <Image Source="Volante.png"
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <!-- Primeira Grid Collum/Row -->
+                    <Image Source="Volante.png"
                             Grid.Row="0"
                             Grid.Column="0"
                             Aspect="AspectFit"
                         />
-                        <Frame Grid.Row="0"
+                    <Frame Grid.Row="0"
                             Grid.Column="0"
                             CornerRadius="100"
                             HorizontalOptions="End"
                             VerticalOptions="Start"
                             Padding="5">
-                            <Frame BorderColor="White"
+                        <Frame BorderColor="White"
                                 HeightRequest="30"
                                 WidthRequest="30"
                                 CornerRadius="100"
@@ -143,37 +195,37 @@
                                 Margin="-10"
                                 Padding="2"
                                 BackgroundColor="#2E6012">
-                                <Label Text="10"
+                            <Label Text="10"
                                     FontSize="10"
                                     TextColor="White"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"
                                     HorizontalTextAlignment="Center"
                                     VerticalTextAlignment="Center" />
-                            </Frame>
                         </Frame>
-                        <Label Text="Motoristas Online"
+                    </Frame>
+                    <Label Text="Motoristas Online"
                             FontAttributes="Bold"
                             Grid.Row="1"
                             Grid.Column="0"
                             HorizontalTextAlignment="Center"
                             FontSize="10"
                         />
-                        <!---->
-                        <!--Segunda Grid Collum/Row-->
-                        <Image Source="Usuariol.png"
+                    <!---->
+                    <!--Segunda Grid Collum/Row-->
+                    <Image Source="Usuariol.png"
                             Grid.Row="0"
                             Grid.Column="1"
                             Aspect="AspectFit"
                         />
-                        <Frame Grid.Row="0"
+                    <Frame Grid.Row="0"
                             Grid.Column="1"
                             CornerRadius="100"
                             HorizontalOptions="End"
                             VerticalOptions="Start"
                             Padding="5"
                         >
-                            <Frame
+                        <Frame
                                 BorderColor="White"
                                 HeightRequest="30"
                                 WidthRequest="30"
@@ -184,7 +236,7 @@
                                 Padding="2"
                                 BackgroundColor="#2E6012"
                             >
-                                <Label Text="40"
+                            <Label Text="40"
                                     FontSize="10"
                                     TextColor="White"
                                     HorizontalOptions="Center"
@@ -192,29 +244,29 @@
                                     HorizontalTextAlignment="Center"
                                     VerticalTextAlignment="Center"
                                 />
-                            </Frame>
                         </Frame>
-                        <Label Text="Usuários Online"
+                    </Frame>
+                    <Label Text="Usuários Online"
                             FontAttributes="Bold"
                             Grid.Row="1"
                             Grid.Column="1"
                             HorizontalTextAlignment="Center"
                             FontSize="10"
                         />
-                        <!--Terceira Grid Collum/Row-->
-                        <Image Source="ponteiro.png"
+                    <!--Terceira Grid Collum/Row-->
+                    <Image Source="ponteiro.png"
                             Grid.Row="0"
                             Grid.Column="2"
                             Aspect="AspectFit"
                         />
-                        <Frame Grid.Row="0"
+                    <Frame Grid.Row="0"
                             Grid.Column="2"
                             CornerRadius="100"
                             HorizontalOptions="End"
                             VerticalOptions="Start"
                             Padding="5"
                         >
-                            <Frame
+                        <Frame
                                 BorderColor="White"
                                 HeightRequest="30"
                                 WidthRequest="30"
@@ -225,7 +277,7 @@
                                 Padding="2"
                                 BackgroundColor="#2E6012"
                             >
-                                <Label
+                            <Label
                                     Text="7"
                                     FontSize="10"
                                     TextColor="White"
@@ -234,45 +286,19 @@
                                     HorizontalTextAlignment="Center"
                                     VerticalTextAlignment="Center"
                                 />
-                            </Frame>
                         </Frame>
-                        <Label Text="Pontos Ativos"
+                    </Frame>
+                    <Label Text="Pontos Ativos"
                             FontAttributes="Bold"
                             Grid.Row="1"
                             Grid.Column="2"
                             HorizontalTextAlignment="Center"
                             FontSize="10"
                         />
-                        <!---->
-                    </Grid>
-                </Frame>
-                <!---->
-            </RelativeLayout>
+                    <!---->
+                </Grid>
+            </Frame>
             <!---->
-            <ScrollView>
-                <!--Carde tela Home-->
-                <StackLayout >
-                    <controleView:ViewHome 
-                        PontoAtendimento = "PA Gênova" 
-                        QuantidadePassageiro = "2 passageiros no PA" 
-                        MotoristaPa = "Motorista a 1k do PA" 
-                        DistanciaPa = "PA a 1m"
-                        corStatus = "#9DAF71"/>
-                    <controleView:ViewHome 
-                        PontoAtendimento = "PA Estação do Metrô" 
-                        QuantidadePassageiro = "3 passageiros no PA" 
-                        MotoristaPa = "Sem motorista no PA" 
-                        DistanciaPa = "PA a 2m"
-                        corStatus = "Gray"/>
-                    <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
-                        QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m do PA" 
-                        DistanciaPa = "PA a 1k"
-                        corStatus = "#9DAF71"/>                    
-                </StackLayout>
-                <!---->
-            </ScrollView>
-        </StackLayout>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
