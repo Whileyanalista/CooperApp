@@ -42,7 +42,7 @@
                                                />
                                         <Label Text="{Binding MotoristaPa}"
                                                 FontAttributes="Bold"
-                                                FontSize="13"
+                                                FontSize="16"
                                                 VerticalOptions="Center" 
                                                />
                                     </StackLayout>
@@ -59,7 +59,7 @@
                                         <Label 
                                             Text="{Binding DistanciaPa}"
                                             FontAttributes="Bold"
-                                            FontSize="13"
+                                            FontSize="16"
                                             VerticalOptions="Center" />
                                     </StackLayout>
                                 </Frame>

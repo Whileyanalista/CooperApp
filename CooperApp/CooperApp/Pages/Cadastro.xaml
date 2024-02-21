@@ -107,7 +107,7 @@
                 <!--Conteudo-->
                 <StackLayout>
                     <Label Text="Bem vindo!"
-                        Padding="0,90,0,0"
+                        Padding="0,50,0,0"
                         HorizontalTextAlignment="Center"
                         FontAttributes="Bold"
                         FontSize="40"
@@ -120,11 +120,9 @@
                         HorizontalOptions="Center" />
 
                     <ScrollView>
-                        <StackLayout Padding="15,10,15,50"
-                        Margin="30">
+                        <StackLayout Padding="15,10,15,50">
                             <Label Text="Dados Pessoas:" FontSize="15" />
                             <Frame HasShadow="False"
-                            Margin="0,0,0,10"
                             BorderColor="#707070"
                             BackgroundColor="#E8ECEF"
                             VerticalOptions="FillAndExpand">
@@ -212,7 +210,11 @@
                                                VerticalOptions="Center"
                                                FontSize="17"/>
                                         <CheckBox />
-                                        <Label Text="Parceiro/Motorista"
+                                        <Label Text="Motorista"
+                                               VerticalOptions="Center"
+                                               FontSize="17"/>
+                                        <CheckBox />
+                                        <Label Text="Parceiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
                                     </StackLayout>

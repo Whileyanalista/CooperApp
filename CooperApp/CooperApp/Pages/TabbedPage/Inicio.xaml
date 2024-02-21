@@ -113,28 +113,41 @@
                     Factor=1,
                     Constant=220
                 }">                
-                <StackLayout >
+                <StackLayout Padding="0,0,0,155">
                     <ScrollView>
                         <!--Carde tela Home-->
                         <StackLayout Padding="0,70">
                             <controleView:ViewHome 
                         PontoAtendimento = "PA Gênova" 
                         QuantidadePassageiro = "2 passageiros no PA" 
-                        MotoristaPa = "Motorista a 1k do PA" 
+                        MotoristaPa = "Motorista a 1k" 
                         DistanciaPa = "PA a 1m"
                         corStatus = "#9DAF71"/>
                             <controleView:ViewHome 
                         PontoAtendimento = "PA Estação do Metrô" 
                         QuantidadePassageiro = "3 passageiros no PA" 
-                        MotoristaPa = "Sem motorista no PA" 
+                        MotoristaPa = "Sem motorista" 
                         DistanciaPa = "PA a 2m"
                         corStatus = "Gray"/>
                             <controleView:ViewHome 
                         PontoAtendimento = "PA Vila Romana" 
                         QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m do PA" 
+                        MotoristaPa = "Motorista a 100m" 
                         DistanciaPa = "PA a 1k"
                         corStatus = "#9DAF71"/>
+                            <controleView:ViewHome 
+                        PontoAtendimento = "PA Restaurante do Maninho" 
+                        QuantidadePassageiro = "1 passageiro no PA" 
+                        MotoristaPa = "Motorista a 100m" 
+                        DistanciaPa = "PA a 1k"
+                        corStatus = "#9DAF71"/>
+                            <controleView:ViewHome 
+                        PontoAtendimento = "PA Atacadão Laudo de Freitas" 
+                        QuantidadePassageiro = "1 passageiro no PA" 
+                        MotoristaPa = "Motorista a 500m" 
+                        DistanciaPa = "PA a 10k"
+                        corStatus = "#9DAF71"/>  
+                            
                         </StackLayout>
                         <!---->
                     </ScrollView>
@@ -143,8 +156,8 @@
             <!---->
             <!--Freime icon-->
             <Frame
-                    CornerRadius="20"
-                    BackgroundColor="#F8F9F4"
+                    CornerRadius="15"
+                    BackgroundColor="White"
                     HeightRequest="70"
                     WidthRequest="350"
                     Padding="10"
