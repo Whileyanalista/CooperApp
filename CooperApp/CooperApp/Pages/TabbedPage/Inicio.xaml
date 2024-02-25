@@ -17,13 +17,12 @@
                          Property=Width, Factor=1                    
                      }" />
             <!--Logo-->
-            <StackLayout  
-                RelativeLayout.XConstraint="{
+            <StackLayout  RelativeLayout.XConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=-140
+                        Constant=-150
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -31,7 +30,8 @@
                         Property=Y,
                         Factor=1,
                         Constant=20
-                    }">
+                    }"
+                             >
                 <Frame
                     CornerRadius="100"
                     HeightRequest="110"
@@ -45,7 +45,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=1
+                        Constant=-60
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -65,7 +65,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=1
+                        Constant=-60
                     }"
                         RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -74,33 +74,38 @@
                         Factor=1,
                         Constant=30
                             }">
-                            <Image Source="Logo.png"
+                        <Image Source="Logo.png"
                             Margin="-23"
                            />
                     </Frame>
                 </Frame>
                 <Label 
-                    FontAttributes="Bold"
-                    FontSize="21"
-                    Padding="20"
-                    Margin="-10"
-                    TextColor="#707070"
-                    Text="Ponto de Atendimento"                    
-                />
+                        FontAttributes="Bold"
+                        FontSize="21"
+                        Padding="20"
+                        Margin="-10"
+                        TextColor="#707070"
+                        Text="Ponto de Atendimento"                    
+                           />
             </StackLayout>
             <!---->
-            <!--Freme
-            Geral-->            
+            <!--Freime-->
+
+            
             <Frame  
                 x:Name="bakgroud"
                 CornerRadius="100"
-                HeightRequest="810"
                 BackgroundColor="#E8ECEF"
                 RelativeLayout.WidthConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         Property=Width, 
                         Factor=1                    
-                    }"                    
+                    }"
+                    RelativeLayout.HeightConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, 
+                         Factor=2                    
+                     }"
                     RelativeLayout.YConstraint="{
                     ConstraintExpression Type=RelativeToParent,
                     ElementName=BanerSuper,
@@ -108,7 +113,7 @@
                     Factor=1,
                     Constant=220
                 }">                
-                <StackLayout >
+                <StackLayout Padding="0,0,0,155">
                     <ScrollView>
                         <!--Carde tela Home-->
                         <StackLayout Padding="0,70">
@@ -131,18 +136,18 @@
                         DistanciaPa = "PA a 1k"
                         corStatus = "#9DAF71"/>
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
+                        PontoAtendimento = "PA Restaurante do Maninho" 
                         QuantidadePassageiro = "1 passageiro no PA" 
                         MotoristaPa = "Motorista a 100m" 
                         DistanciaPa = "PA a 1k"
                         corStatus = "#9DAF71"/>
-
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
+                        PontoAtendimento = "PA Atacadão Laudo de Freitas" 
                         QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m" 
-                        DistanciaPa = "PA a 1k"
-                        corStatus = "#9DAF71"/>
+                        MotoristaPa = "Motorista a 500m" 
+                        DistanciaPa = "PA a 10k"
+                        corStatus = "#9DAF71"/>  
+                            
                         </StackLayout>
                         <!---->
                     </ScrollView>
@@ -151,8 +156,8 @@
             <!---->
             <!--Freime icon-->
             <Frame
-                    CornerRadius="20"
-                    BackgroundColor="#F8F9F4"
+                    CornerRadius="15"
+                    BackgroundColor="White"
                     HeightRequest="70"
                     WidthRequest="350"
                     Padding="10"
