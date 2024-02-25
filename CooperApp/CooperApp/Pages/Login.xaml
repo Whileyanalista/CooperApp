@@ -42,7 +42,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=-60
+                        Constant=-1
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -62,14 +62,14 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=-60
+                        Constant=1
                     }"
                         RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
                         ElementName=BanerSuper,
                         Property=Y,
                         Factor=1,
-                        Constant= 30
+                        Constant=30
                             }">
                             <Image Source="Logo.png"
                             Margin="-23"
@@ -86,20 +86,17 @@
                            />
             </StackLayout>
             <!---->
-            <!--Freime-->
+            <!--Freme
+            Geral-->
             <Frame
-                CornerRadius="100"
+                CornerRadius="100"                
+                HeightRequest="810"
                 BackgroundColor="#E8ECEF"
                 RelativeLayout.WidthConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         Property=Width, 
                         Factor=1                    
-                    }"
-                    RelativeLayout.HeightConstraint="{
-                         ConstraintExpression Type=RelativeToParent, 
-                         Property=Width, 
-                         Factor=2                    
-                     }"
+                    }"                   
                     RelativeLayout.YConstraint="{
                     ConstraintExpression Type=RelativeToParent,
                     ElementName=BanerSuper,
@@ -109,7 +106,7 @@
                 }">
 
                 <StackLayout Padding="0,50,0,0" >
-                    <Label Text="Bem vindo!"                           
+                    <Label Text="Bem-vindo!"                           
                            HorizontalTextAlignment="Center"
                            FontAttributes="Bold"
                            FontSize="40"
@@ -125,16 +122,16 @@
                                  WidthRequest="350"
                                  Padding="30"
                                  >
-                        <Entry Placeholder="Usuario"
+                        <Entry Placeholder="E-mail"
                                TextColor="#707070"
-                               PlaceholderColor="#707070"
+                               PlaceholderColor="#A8A7A7"
                                HorizontalOptions="FillAndExpand"
                                FontSize="17"
                                ReturnType="Next"/>
 
                         <Entry Placeholder="Senha"
                                TextColor="#707070"
-                               PlaceholderColor="#707070"
+                               PlaceholderColor="#A8A7A7"
                                HorizontalOptions="FillAndExpand"                               
                                IsPassword="True"
                                FontSize="17"
@@ -158,7 +155,7 @@
                             <Label Text="Não tem cadastro?" 
                                    FontSize="15"/>
 
-                            <Label Text="Registrar-se!" 
+                            <Label Text="Registre-se!" 
                                    TextColor="#3611FC"
                                    FontSize="15"/>
 
@@ -169,8 +166,7 @@
                                HorizontalOptions="Center"
                                FontSize="15"/>
                         
-                    </StackLayout>
-                   
+                    </StackLayout>                   
                 </StackLayout>
             </Frame>
             <!---->

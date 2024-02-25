@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Xamarin.Essentials;
+using System;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -16,13 +15,15 @@ namespace CooperApp.Pages
         {
             InitializeComponent();
 
+
+
             Entry entryCPF = new Entry();
             entryCPF.TextChanged += EntryCPF_TextChanged;
 
             Entry entryTelefone = new Entry();
             entryTelefone.TextChanged += EntryCel_TextChanged;
 
-        }
+        }       
 
         private void EntryCPF_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -58,6 +59,63 @@ namespace CooperApp.Pages
                 }
             }
 
+
+        }
+
+        private async void DocVeiculo_onClicked(object sender, EventArgs e)
+        {
+            try
+            {
+                
+                var result = await FilePicker.PickAsync(new PickOptions
+                {
+                    FileTypes = FilePickerFileType.Pdf, // ou especifique os tipos de arquivo desejados
+                    PickerTitle = "Nome do arquivo"
+                });
+                                
+
+                if (result != null)
+                {
+                    var arquivo_ = "";
+                    // Faça o que for necessário com o arquivo selecionado
+                    foreach(var file in result.FileName)
+                    {
+                        arquivo_ = result.FileName;
+                    }
+
+                    if (butArquivo.Text == "Selecione o Documento do veiculo")
+                    {
+                        selectedCarEntry.Text = $"Arquivo :{ arquivo_}";
+
+                        butArquivo.Text = "Selecione a Habilitaçao";
+                    } 
+                    else if(butArquivo.Text == "Selecione a Habilitaçao")
+                    {
+                        selectedHabEntry.Text = $"Arquivo :{ arquivo_}";
+
+                        butArquivo.Text = "Selecione o Documento do veiculo";
+                    }                  
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                // Trate exceções, se necessário
+            }
+        }
+
+        private void selectedHabEntry_Focused(object sender, FocusEventArgs e)
+        {
+            butArquivo.Text = "Selecione a Habilitaçao";
+        }
+
+        private void selectedCarEntry_Focused(object sender, FocusEventArgs e) 
+        { 
+       
+            butArquivo.Text = "Selecione o Documento do veiculo";
+            //selectedCarEntry.Keyboard = Keyboard.Create(KeyboardFlags.All);
+
         }
     }
+
 }
