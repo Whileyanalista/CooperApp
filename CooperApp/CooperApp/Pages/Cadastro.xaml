@@ -92,6 +92,7 @@
                 CornerRadius="100"
                 HeightRequest="810"
                 BackgroundColor="#E8ECEF"
+                VerticalOptions="FillAndExpand"
                 RelativeLayout.WidthConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         Property=Width, 
@@ -102,7 +103,7 @@
                     ElementName=BanerSuper,
                     Property=Y,
                     Factor=1,
-                    Constant=220
+                    Constant=220                
                 }">
                 <!--Conteudo-->
                 <StackLayout>
@@ -119,11 +120,11 @@
                         VerticalOptions="Center"
                         HorizontalOptions="Center" />
 
-                    <ScrollView>
-                        <StackLayout Padding="15,25,15,50"
-                       >
+                    <ScrollView x:Name="scrollcad">
+                        <StackLayout Padding="15,25,15,50">
                             <Label Text="Dados Pessoas:" FontSize="15" />
-                            <Frame HasShadow="False"
+                            <Frame x:Name="framecad"
+                                HasShadow="False"
                             Margin="0,0,0,10"
                             BorderColor="#707070"
                             BackgroundColor="#E8ECEF"
@@ -210,27 +211,34 @@
                                         </StackLayout>
                                     </Frame>
                                     <StackLayout Orientation="Horizontal" 
-                                                 Margin="0,10"
-                                                 Spacing="5">
-                                        <CheckBox IsChecked="True"/>
+                                                 Margin="0,10">
+                                        <RadioButton x:Name="rdlusuario" CheckedChanged="rdtipousuario_CheckedChanged"/>
                                         <Label Text="Passageiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
-                                        <CheckBox />
+                                        <RadioButton x:Name="rdmotorista" CheckedChanged="rdtipousuario_CheckedChanged"/>
                                         <Label Text="Motorista"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
-                                        <CheckBox />
+                                        <RadioButton x:Name="rdparceiro" CheckedChanged="rdtipousuario_CheckedChanged"/>
                                         <Label Text="Parceiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
                                     </StackLayout>
-                                    <StackLayout>
-                                        <Label Text="Dados de veiculo:" FontSize="15" />
+                                    <StackLayout >
+                                        <Button x:Name="btCadastro"
+                                                Margin="0,0,0,20"
+                                                Text="Salvar"
+                                                FontAttributes="Bold"
+                                                TextColor="#707070"
+                                                BackgroundColor="#9DAF71"
+                                                CornerRadius="50"/>
                                         <Frame 
+                                           x:Name="frameCadVeiculo"
                                            BackgroundColor="#E8ECEF" 
                                            HasShadow="False"
                                            BorderColor="#707070" >
+                                            
                                             <StackLayout>
                                                 <Entry Placeholder="Modelo"
                                                    TextColor="#707070"
@@ -253,7 +261,7 @@
                                                    HorizontalOptions="FillAndExpand"
                                                    FontSize="17"
                                                    ReturnType="Next"/>                                                  
-                                                </StackLayout>
+                                                </StackLayout >
                                                 <Label Text="Dados de veiculo:" FontSize="15" />
                                                 <Frame
                                                     BackgroundColor="#E8ECEF" 
@@ -262,8 +270,10 @@
                                                     <StackLayout>                                                        
                                                         <StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
                                                             <Button x:Name="butArquivo"
+                                                                    ImageSource ="Anexo.png"
                                                                     Clicked="DocVeiculo_onClicked"
                                                                     Text="Selecione o Documento do veiculo" 
+                                                                    FontSize="13"
                                                                     FontAttributes="Bold"
                                                                     TextColor="#707070"
                                                                     BackgroundColor="#E3E6E8"
@@ -272,26 +282,27 @@
                                                             <Label Text="Tipo PDF"
                                                                    TextColor="#707070"
                                                                    HorizontalOptions="Center"                                                               
-                                                                   HorizontalTextAlignment="Center"
-                                                                   />                                                            
-                                                           
+                                                                   HorizontalTextAlignment="Center" 
+                                                                   />
+
                                                             <Entry x:Name="selectedCarEntry"
-                                                                   Focused="selectedCarEntry_Focused"                                                                   
-                                                                   Text="Documento do Veiculo"
-                                                                   TextColor="#707070"
+                                                                   Focused="selectedCarEntry_Focused"  
+                                                                   Text="Documento do veiculo"
+                                                                   TextColor="#A8A7A7"
                                                                    PlaceholderColor="#A8A7A7"
                                                                    HorizontalOptions="FillAndExpand"
-                                                                   FontSize="15"
-                                                                   ClearButtonVisibility="WhileEditing"                                                                    
+                                                                   FontSize="15"                                                                   
+                                                                   ClearButtonVisibility="WhileEditing"
                                                                   />
+
 
                                                             <Entry x:Name="selectedHabEntry"
                                                                    Focused="selectedHabEntry_Focused"  
                                                                    Text="Habilitação"
-                                                                   TextColor="#707070"
+                                                                   TextColor="#A8A7A7"
                                                                    PlaceholderColor="#A8A7A7"
                                                                    HorizontalOptions="FillAndExpand"
-                                                                   FontSize="15"
+                                                                   FontSize="15"                                                                   
                                                                    ClearButtonVisibility="WhileEditing"
                                                                   />
 
@@ -301,12 +312,65 @@
                                                 </Frame>
                                             </StackLayout>
                                         </Frame>
-                                    </StackLayout>
-                                    <Button Text="Salvar"
-                                            FontAttributes="Bold"
-                                            TextColor="#707070"
-                                            BackgroundColor="#9DAF71"
-                                            CornerRadius="50"/>
+                                        <Frame 
+                                           x:Name="frameCadPasseiro"
+                                           BackgroundColor="#E8ECEF" 
+                                           HasShadow="False"
+                                           BorderColor="#707070" >
+
+                                            <StackLayout>
+                                                <Entry Placeholder="Razão social (Nome da empresa)"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>  
+                                                
+                                                   <Entry Placeholder="CNPJ"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   Keyboard="Numeric"
+                                                   ReturnType="Next"/>
+                                                <Label Text="Logo da empresa:" FontSize="15" />
+                                                <Frame
+                                                    BackgroundColor="#E8ECEF" 
+                                                    HasShadow="False"
+                                                    BorderColor="#707070" >
+                                                    <StackLayout>
+                                                        <StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                                                            <Button x:Name="butArquivop"
+                                                                    ImageSource ="Anexo.png"
+                                                                    Clicked="DocVeiculo_onClicked"
+                                                                    Text="Selecione a logo da empresa" 
+                                                                    FontSize="13"
+                                                                    FontAttributes="Bold"
+                                                                    TextColor="#707070"
+                                                                    BackgroundColor="#E3E6E8"
+                                                                    CornerRadius="5"/>
+                                                            <BoxView BackgroundColor="#707070" HeightRequest="1" Margin="0"/>
+                                                            <Label Text="Tipo PNG"
+                                                                   TextColor="#707070"
+                                                                   HorizontalOptions="Center"                                                               
+                                                                   HorizontalTextAlignment="Center" 
+                                                                   />
+
+                                                            <Entry x:Name="selectedCarEntryp"
+                                                                   Focused="selectedCarEntry_Focused"  
+                                                                   Text="Logo marca:"
+                                                                   TextColor="#A8A7A7"
+                                                                   PlaceholderColor="#A8A7A7"
+                                                                   HorizontalOptions="FillAndExpand"
+                                                                   FontSize="15"                                                                   
+                                                                   ClearButtonVisibility="WhileEditing"
+                                                                  />
+                                                        </StackLayout>
+                                                    </StackLayout>
+                                                </Frame>
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>                                   
                                 </StackLayout>
                             </Frame>
                         </StackLayout>
