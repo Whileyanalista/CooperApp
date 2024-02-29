@@ -342,7 +342,7 @@
                                                         <StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
                                                             <Button x:Name="butArquivop"
                                                                     ImageSource ="Anexo.png"
-                                                                    Clicked="DocVeiculo_onClicked"
+                                                                    Clicked="DocVeiculop_onClicked"
                                                                     Text="Selecione a logo da empresa" 
                                                                     FontSize="13"
                                                                     FontAttributes="Bold"
@@ -356,8 +356,8 @@
                                                                    HorizontalTextAlignment="Center" 
                                                                    />
 
-                                                            <Entry x:Name="selectedCarEntryp"
-                                                                   Focused="selectedCarEntry_Focused"  
+                                                            <Entry x:Name="selectedPassEntryp"
+                                                                   Focused="selectedCarEntryp_Focused"  
                                                                    Text="Logo marca:"
                                                                    TextColor="#A8A7A7"
                                                                    PlaceholderColor="#A8A7A7"

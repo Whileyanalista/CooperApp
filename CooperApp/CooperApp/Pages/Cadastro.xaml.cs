@@ -155,8 +155,7 @@ namespace CooperApp.Pages
                 {
                     FileTypes = FilePickerFileType.Pdf, // ou especifique os tipos de arquivo desejados
                     PickerTitle = "Nome do arquivo"
-                });
-
+                });                
 
                 if (result != null)
                 {
@@ -165,7 +164,7 @@ namespace CooperApp.Pages
                     foreach (var file in result.FileName)
                     {
                         arquivo_ = result.FileName;
-                    }
+                    }                   
 
                     if (butArquivo.Text == "Selecione o Documento do veiculo")
                     {
@@ -178,13 +177,42 @@ namespace CooperApp.Pages
                         selectedHabEntry.Text = $"Arquivo :{ arquivo_}";
 
                         butArquivo.Text = "Selecione o Documento do veiculo";
-                    }
+                    }                   
 
                 }
             }
             catch (Exception ex)
             {
                 // Trate exceções, se necessário
+            }
+        }
+
+        private async void DocVeiculop_onClicked(object sender, EventArgs e)
+        {
+
+            try
+            {
+                var result1 = await FilePicker.PickAsync(new PickOptions
+                {
+                    FileTypes = FilePickerFileType.Png, // ou especifique os tipos de arquivo desejados
+                    PickerTitle = "Nome do arquivo"
+                });
+
+
+                var arquivo1_ = "";
+                foreach (var file in result1.FileName)
+                {
+                    arquivo1_ = result1.FileName;
+                }
+
+                if (butArquivop.Text == "Selecione a logo da empresa")
+                {
+                    selectedPassEntryp.Text = $"Arquivo :{ arquivo1_}";
+                }               
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
 
@@ -201,11 +229,16 @@ namespace CooperApp.Pages
             selectedCarEntry.Unfocus();
         }
 
+        private void selectedCarEntryp_Focused(object sender, FocusEventArgs e)
+        {
+            butArquivop.Text = "Selecione a logo da empresa";
+            selectedPassEntryp.Unfocus();
+        }
+
         private async void rdtipousuario_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
             rdchekbox();
-        }
-       
+        }       
     }
 
 }

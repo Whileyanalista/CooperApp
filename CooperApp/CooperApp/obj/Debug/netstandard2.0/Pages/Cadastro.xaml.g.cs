@@ -62,7 +62,7 @@ namespace CooperApp.Pages {
         private global::Xamarin.Forms.Button butArquivop;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry selectedCarEntryp;
+        private global::Xamarin.Forms.Entry selectedPassEntryp;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
@@ -82,7 +82,7 @@ namespace CooperApp.Pages {
             selectedHabEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "selectedHabEntry");
             frameCadPasseiro = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "frameCadPasseiro");
             butArquivop = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "butArquivop");
-            selectedCarEntryp = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "selectedCarEntryp");
+            selectedPassEntryp = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "selectedPassEntryp");
         }
     }
 }
