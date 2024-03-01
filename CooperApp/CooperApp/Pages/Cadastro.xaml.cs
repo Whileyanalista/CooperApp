@@ -1,6 +1,5 @@
 ﻿using System;
 using Xamarin.Essentials;
-using System;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -32,13 +31,13 @@ namespace CooperApp.Pages
 
         }
 
-        private async void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
+        private void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
         {
             // Verifica se o deslocamento horizontal é maior que o valor máximo permitido
             if (e.ScrollY > maxVerticalScrollDistance)
-            {               
-                scrollcad.ScrollToAsync(scrollcad.ScrollX, maxVerticalScrollDistance, false); 
-                
+            {
+                scrollcad.ScrollToAsync(scrollcad.ScrollX, maxVerticalScrollDistance, false);
+
             }
 
         }
@@ -183,7 +182,7 @@ namespace CooperApp.Pages
             }
             catch (Exception ex)
             {
-                // Trate exceções, se necessário
+                
             }
         }
 
@@ -235,10 +234,10 @@ namespace CooperApp.Pages
             selectedPassEntryp.Unfocus();
         }
 
-        private async void rdtipousuario_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        private void Rdtipousuario_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
             rdchekbox();
-        }       
+        }
     }
 
 }

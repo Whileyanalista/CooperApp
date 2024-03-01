@@ -212,15 +212,15 @@
                                     </Frame>
                                     <StackLayout Orientation="Horizontal" 
                                                  Margin="0,10">
-                                        <RadioButton x:Name="rdlusuario" CheckedChanged="rdtipousuario_CheckedChanged"/>
+                                        <RadioButton x:Name="rdlusuario" CheckedChanged="Rdtipousuario_CheckedChanged"/>
                                         <Label Text="Passageiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
-                                        <RadioButton x:Name="rdmotorista" CheckedChanged="rdtipousuario_CheckedChanged"/>
+                                        <RadioButton x:Name="rdmotorista" CheckedChanged="Rdtipousuario_CheckedChanged"/>
                                         <Label Text="Motorista"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
-                                        <RadioButton x:Name="rdparceiro" CheckedChanged="rdtipousuario_CheckedChanged"/>
+                                        <RadioButton x:Name="rdparceiro" CheckedChanged="Rdtipousuario_CheckedChanged"/>
                                         <Label Text="Parceiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
