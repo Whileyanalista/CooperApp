@@ -9,10 +9,11 @@
              x:Class="CooperApp.MainPage"    
              xmlns:tabbedPage ="clr-namespace:CooperApp.Paginas.TabbedPage"
              xmlns:tabbedPage1 ="clr-namespace:CooperApp.Pages"
-            >   
+            >
+    
+    <tabbedPage1:Login/>
     <tabbedPage1:Cadastro/>
     <tabbedPage:Inicio/>
-    <tabbedPage1:Login/>     
     <tabbedPage:Parceiro/>
     <tabbedPage:Perfil/>
 </TabbedPage>
