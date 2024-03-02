@@ -107,7 +107,7 @@
                 }">
                 <!--Conteudo-->
                 <StackLayout>
-                    <Label Text="Bem vindo!"
+                    <Label Text="Bem-vindo!"
                         Padding="0,50,0,0"
                         HorizontalTextAlignment="Center"
                         FontAttributes="Bold"
