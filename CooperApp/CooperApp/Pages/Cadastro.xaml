@@ -112,7 +112,7 @@
 >>>>>>> 00aa89dbf5b7941c34b6840c36254df8cda762af
                 <!--Conteudo-->
                 <StackLayout>
-                    <Label Text="Bem vindo!"
+                    <Label Text="Bem-vindo!"
                         Padding="0,50,0,0"
                         HorizontalTextAlignment="Center"
                         FontAttributes="Bold"
