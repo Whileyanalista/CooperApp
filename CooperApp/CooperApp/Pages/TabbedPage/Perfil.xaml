@@ -1,14 +1,231 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             xmlns:controleView="clr-namespace:CooperApp.View"
              x:Class="CooperApp.Paginas.TabbedPage.Perfil"
              Title="Perfil"
              IconImageSource="Perfil.png">            
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Perfil"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout VerticalOptions="Start" >
+            <Frame x:Name="BanerSuper"
+                    BackgroundColor="#9DAF71"
+                    HeightRequest="300"
+                    RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1                    
+                     }" />
+            <!--Logo-->
+            <StackLayout  
+                RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-60
+                    }" 
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }">
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30
+                            }">
+                        <Image Source="Logo.png"
+                            Margin="-23"
+                           />
+                    </Frame>
+                </Frame>
+                <Label 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="21"
+                    Padding="20"
+                    Margin="-10"
+                    TextColor="#707070"
+                    Text="Perfil"                    
+                />
+            </StackLayout>
+            <!--Logo-->
+            <!--Freme Geral-->
+            <Frame  
+                x:Name="bakgroud"
+                CornerRadius="100"
+                HeightRequest="810"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                    
+                    }"                    
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220
+                }">
+                <ScrollView>
+                    <StackLayout Padding="0,100" Margin="30" Spacing="50">
+                        <Frame BackgroundColor ="#EEEEEE" BorderColor="#707070" CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="Endereço" FontSize="18"
+                               TextColor="#707070"                           
+                               FontAttributes="Bold"
+                               />
+                                <Label Text="Rua colônia Boa União, Vila de Abrant,..." FontSize="16"
+                               TextColor="#707070" 
+                               />
+                                <Label Text="Condominio" FontSize="18"
+                               TextColor="#707070"                           
+                               FontAttributes="Bold"
+                               />
+                                <Label Text="Vila Romana 1" FontSize="16"
+                               TextColor="#707070" 
+                               />
+                                <BoxView Margin="0,10,0,0" HorizontalOptions="FillAndExpand" BackgroundColor="#707070"
+                                      HeightRequest="2"/>
+
+                                <Label Text="Alterar" TextColor="#11A557" FontAttributes="Bold" FontSize="15"
+                                   Margin="0,10,0,0"/>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BackgroundColor ="#EEEEEE" BorderColor="#707070" CornerRadius="10">
+                            <StackLayout>
+                                <Label Text="E-mail" FontSize="18"
+                               TextColor="#707070"                           
+                               FontAttributes="Bold"
+                               />
+                                <Label Text="whiley.analista@gmail.com" FontSize="16"
+                               TextColor="#707070" 
+                               />
+                                <Label Text="Celular" FontSize="18"
+                               TextColor="#707070"                           
+                               FontAttributes="Bold"
+                               />
+                                <Label Text="(71)981170413" FontSize="16"
+                               TextColor="#707070" 
+                               />
+                                <Label Text="Senha" FontSize="18"
+                               TextColor="#707070"                           
+                               FontAttributes="Bold"
+                               />
+                                <Label Text="******" FontSize="16"
+                               TextColor="#707070" 
+                               />
+                                <BoxView Margin="0,10,0,0" HorizontalOptions="FillAndExpand" BackgroundColor="#707070"
+                                      HeightRequest="2"/>
+
+                                <Label Text="Alterar" TextColor="#11A557" FontAttributes="Bold" FontSize="15"
+                                   Margin="0,10,0,0"/>
+                            </StackLayout>
+                        </Frame>
+                        <controleView:ViewParceiro
+                        ComponenteParceiro="Fiat Siena, ABC1234, Branco.."
+                        TipoDoc="CNH, Documentos do veiculo.. "
+                        />
+                        <controleView:ViewParceiro
+                        ComponenteParceiro="Choping OutLaty Premium, 80000136489723"
+                        TipoDoc="JogoOutlaty.PNG "
+                        />
+                    </StackLayout>                              
+                </ScrollView>                
+            </Frame>
+            <!--Freme Geral-->
+            <!--Freime Apresenta-->
+            <Frame
+                    CornerRadius="20"
+                    BackgroundColor="#FFFFFF"
+                    HeightRequest="100"
+                    WidthRequest="350"
+                    Padding="10"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    RelativeLayout.XConstraint="{
+                    ConstraintExpression Type=RelativeToParent, 
+                    ElementName=bakgroud, 
+                    Property=Width,
+                    Factor=0.5,
+                    Constant= -185
+                    }"
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToView,
+                    ElementName=bakgroud,
+                    Property=Y,
+                    Factor=1,
+                    Constant=-20
+                }">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                        <Frame BackgroundColor="#11A557"
+                            VerticalOptions="Start"
+                            HeightRequest="12"
+                            WidthRequest="12"                               
+                            CornerRadius="100"
+                            Padding="5"
+                            Margin="15,0,0,0">
+                            <Image Source="Check.png"/>
+                        </Frame>
+                        <Label Text="Usuario Ativo" 
+                           TextColor="#11A557" 
+                           FontAttributes="Bold"
+                           VerticalOptions="Start"
+                           Margin="5,0,0,0"
+                           FontSize="16"/>
+                    </StackLayout>
+                    <Label Text="Whiley.analista@gmail.com"
+                           FontSize="20"
+                           Margin="20,0,0,0"
+                           TextColor="#707070"                           
+                           FontAttributes="Bold"/>
+                    <Label Text="Passageiro"
+                           FontSize="15"
+                           Margin="20,0,0,0"
+                           TextColor="#707070" />
+                </StackLayout>
+            </Frame>
+            <!--Freime Apresenta-->
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

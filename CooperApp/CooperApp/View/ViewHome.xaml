@@ -12,37 +12,40 @@
                         <BoxView Color="{Binding corStatus}"
                         HeightRequest="150"
                         WidthRequest="10"
-                        Margin="20,0,0,0" 
                         />
                     </Grid>                    
                     <!--Estrutura do card-->
-                    <Frame HasShadow="False"
+                    <Frame 
+                        HasShadow="False"
                         BackgroundColor="White"
-                        HorizontalOptions="FillAndExpand"
-                        Padding="7"
-                    >
+                        HorizontalOptions="Center"
+                        Padding="8"
+                        >
                         <StackLayout >
                             <Label Text="{Binding PontoAtendimento}"
-                                FontSize="20" />
+                                   TextColor="#5E5C5C"
+                                   FontSize="19" 
+                                   FontAttributes="Bold"/>
                             <BoxView 
                                 BackgroundColor="Gray"
-                                HeightRequest="1" />
+                                HeightRequest="2" />
                             <Label 
-                                Text="{Binding QuantidadePassageiro}" />
+                                Text="{Binding QuantidadePassageiro}"
+                                TextColor="#707070"
+                                FontSize="16"
+                                FontAttributes="None"/>
                             <StackLayout Orientation="Horizontal">
-                                <Frame BackgroundColor="#F4F8FC"
-                                    HorizontalOptions="FillAndExpand"
-                                    HasShadow="False"
-                                    CornerRadius="10"                                       
-                                    >
-                                    <StackLayout Orientation="Horizontal"  
-                                                 Padding="0">
-                                        <Image Source="Volante.png"
-                                               HeightRequest="20" 
-                                               />
+                                <Frame BackgroundColor="#F4F8FC" 
+                                       HasShadow="False"  
+                                       CornerRadius="10"
+                                       >
+                                    <StackLayout Orientation="Horizontal"
+                                                 HeightRequest="1"
+                                                 WidthRequest="200">
+                                        <Image Source="Motorista.png" HeightRequest="30"/>
                                         <Label Text="{Binding MotoristaPa}"
                                                 FontAttributes="Bold"
-                                                FontSize="13"
+                                                FontSize="15"
                                                 VerticalOptions="Center" 
                                                />
                                     </StackLayout>
@@ -51,15 +54,14 @@
                                         HorizontalOptions="FillAndExpand"
                                         HasShadow="False"
                                         CornerRadius="10"                                        
-                                >
-                                    <StackLayout Orientation="Horizontal"  
-                                                 Padding="0">
-                                        <Image Source="ponteiro.png"
-                                            HeightRequest="20" />
+                                        >
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="Ponteiro.png"
+                                            HeightRequest="30" />
                                         <Label 
                                             Text="{Binding DistanciaPa}"
                                             FontAttributes="Bold"
-                                            FontSize="13"
+                                            FontSize="15"
                                             VerticalOptions="Center" />
                                     </StackLayout>
                                 </Frame>
