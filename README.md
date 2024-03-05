@@ -1,20 +1,34 @@
 # CooperApp
 Aplicativo que auxilia com a logistica de fluxo de passageiro
 
-História tela Inicial:
+História tela Cadastro:
 
 Está tela retorna para o usuário:
-PA (Pronto de atendimento).
-Quantidade de veículos operando.
-Quantidade de usuário online.
-Direcionamento para seus respectivos PAs.
+Campos necessarios para a funcionalidade da aplicação.
+Dados pessoas:
+Nome completo.
+E-mail.
+Celular.
+CPF.
+
+Dados de endereço:
+CEP.
+RUA.
+Condominio.
+
+Dados de acesso:
+Login
+Senha
+
+Dados de parceiro:
+Motorista:
+Modelo/Placa/Cor/Documento do veiculo/CNH
+
+Parceiro Logista.
+Razão social/CNPJ/Logo
 
 Leyout superior:
 A logo sentralizada.
-Um card contendo:
-Ícone Motorista (Sinalizando quantidade de motorista online)
-Ícone de usuário (Sinalizando a quantidade de usuários online)
-Ícone de PA (Sinalizando os Pontos de atendimentos cadastrados)
-
-Cards:
-Possibilita identificar os PAs, a distância levando em consideração o ponto de origem do GPS que consulta, motorista se deslocando para o local
+Cards contendo:
+Capos para cadstros
+Local de anexo dos arquivos necessario(Parceiro e Motorista mudam dinamicamente com base em uma radioButon)
