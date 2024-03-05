@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CooperApp.Pages.Cadastro"
+    Title="Cadastro">
+    <ContentPage.Content>
+        <RelativeLayout VerticalOptions="Start">
+            <Frame x:Name="BanerSuper"
+                BackgroundColor="#9DAF71"
+                HeightRequest="300"
+                RelativeLayout.WidthConstraint="{
+                ConstraintExpression Type=RelativeToParent, 
+                Property=Width, Factor=1
+                }" />
+
+            <!--Logo-->
+            <StackLayout
+                RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-110
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }">
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30
+                            }">
+                            <Image Source="Logo.png"
+                            Margin="-23"
+                        />
+                    </Frame>
+                </Frame>
+                <Label
+                    HorizontalOptions="Center"
+                    FontAttributes="Bold"
+                    FontSize="21"
+                    Padding="20"
+                    Margin="-10"
+                    TextColor="#707070"
+                    Text="Tela de Cadastro"
+                />
+            </StackLayout>
+            <!---->
+            <!--Freme
+            Geral-->
+            <Frame
+                CornerRadius="100"
+                HeightRequest="810"
+                BackgroundColor="#E8ECEF"
+                VerticalOptions="FillAndExpand"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                   
+                    }"                
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220                
+                }">
+                <!--Conteudo-->
+                <StackLayout>
+                    <Label Text="Bem-vindo!"
+                        Padding="0,50,0,0"
+                        HorizontalTextAlignment="Center"
+                        FontAttributes="Bold"
+                        FontSize="40"
+                        TextColor="#707070"
+                    />
+                    <Label Text="Informe seus dados"
+                        FontSize="18"
+                        TextColor="#707070"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center" />
+
+                    <ScrollView x:Name="scrollcad">
+                        <StackLayout Padding="15,25,15,50">
+                            <Label Text="Dados Pessoas:" FontSize="15" />
+                            <Frame x:Name="framecad"
+                                HasShadow="False"
+                            Margin="0,0,0,10"
+                            BorderColor="#707070"
+                            BackgroundColor="#E8ECEF"
+                            VerticalOptions="FillAndExpand">
+                                <StackLayout>
+                                    <Entry Placeholder="Nome Completo"
+                                       TextColor="#707070"
+                                       PlaceholderColor="#A8A7A7"
+                                       HorizontalOptions="FillAndExpand"
+                                       FontSize="17"
+                                           ReturnType="Next"/>
+
+                                    <Entry Placeholder="E-mail"
+                                       TextColor="#707070"
+                                       PlaceholderColor="#A8A7A7"
+                                       HorizontalOptions="FillAndExpand"
+                                       FontSize="17"
+                                       ReturnType="Next"/>
+
+                                    <Entry Placeholder="Condominio"
+                                       TextColor="#707070"
+                                       PlaceholderColor="#A8A7A7"
+                                       HorizontalOptions="FillAndExpand"
+                                       FontSize="17"
+                                           ReturnType="Next"/>
+
+                                    <Entry Placeholder="CEP"
+                                           Keyboard="Numeric"
+                                           TextColor="#707070"
+                                           PlaceholderColor="#A8A7A7"
+                                           HorizontalOptions="FillAndExpand"
+                                           FontSize="17"
+                                           ReturnType="Next"/>  
+
+                                    <Entry Placeholder="RUA"
+                                           TextColor="#707070"
+                                           PlaceholderColor="#A8A7A7"
+                                           HorizontalOptions="FillAndExpand"
+                                           FontSize="17"
+                                           ReturnType="Next"/>
+
+                                    <Entry  x:Name="EntryCel"
+                                            TextChanged="EntryCel_TextChanged"
+                                            Placeholder="Cel (##)#####-####"
+                                            TextColor="#707070"
+                                            PlaceholderColor="#A8A7A7"
+                                            HorizontalOptions="FillAndExpand"
+                                            Keyboard="Telephone"
+                                            FontSize="17"
+                                            ReturnType="Next"
+                                            MaxLength="15"/>
+
+                                    <Entry x:Name="EntryCPF"
+                                           MaxLength="14"
+                                           TextChanged="EntryCPF_TextChanged"
+                                           Placeholder="CPF ###.###-#####"
+                                           TextColor="#707070"
+                                           PlaceholderColor="#A8A7A7"
+                                           HorizontalOptions="FillAndExpand"
+                                           FontSize="17"
+                                           Keyboard="Numeric"
+                                           ReturnType="Next"/> 
+                                    
+                                    <Label Text="Dados de Acesso:" FontSize="15" />
+                                    <Frame BackgroundColor="#E8ECEF" 
+                                           HasShadow="False"
+                                           BorderColor="#707070"                            
+                                           >
+                                        <StackLayout>
+                                            <Entry Placeholder="Senha"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>
+
+                                            <Entry Placeholder="Confirmar Senha"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>
+                                            
+                                        </StackLayout>
+                                    </Frame>
+                                    <StackLayout Orientation="Horizontal" 
+                                                 Margin="0,10">
+                                        <RadioButton x:Name="rdlusuario" CheckedChanged="Rdtipousuario_CheckedChanged"/>
+                                        <Label Text="Passageiro"
+                                               VerticalOptions="Center"
+                                               FontSize="17"/>
+                                        <RadioButton x:Name="rdmotorista" CheckedChanged="Rdtipousuario_CheckedChanged"/>
+                                        <Label Text="Motorista"
+                                               VerticalOptions="Center"
+                                               FontSize="17"/>
+                                        <RadioButton x:Name="rdparceiro" CheckedChanged="Rdtipousuario_CheckedChanged"/>
+                                        <Label Text="Parceiro"
+                                               VerticalOptions="Center"
+                                               FontSize="17"/>
+                                    </StackLayout>
+                                    <StackLayout >
+                                        <Button x:Name="btCadastro"
+                                                Margin="0,0,0,20"
+                                                Text="Salvar"
+                                                FontAttributes="Bold"
+                                                TextColor="#707070"
+                                                BackgroundColor="#9DAF71"
+                                                CornerRadius="50"/>
+                                        <Frame 
+                                           x:Name="frameCadVeiculo"
+                                           BackgroundColor="#E8ECEF" 
+                                           HasShadow="False"
+                                           BorderColor="#707070" >
+                                            
+                                            <StackLayout>
+                                                <Entry Placeholder="Modelo"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>
+                                                
+                                                <StackLayout Orientation="Horizontal">
+                                                   <Entry Placeholder="Placa"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>
+                                                    
+                                                   <Entry Placeholder="Cor"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>                                                  
+                                                </StackLayout >
+                                                <Label Text="Dados de veiculo:" FontSize="15" />
+                                                <Frame
+                                                    BackgroundColor="#E8ECEF" 
+                                                    HasShadow="False"
+                                                    BorderColor="#707070" >
+                                                    <StackLayout>                                                        
+                                                        <StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                                                            <Button x:Name="butArquivo"
+                                                                    ImageSource ="Anexo.png"
+                                                                    Clicked="DocVeiculo_onClicked"
+                                                                    Text="Selecione o Documento do veiculo" 
+                                                                    FontSize="13"
+                                                                    FontAttributes="Bold"
+                                                                    TextColor="#707070"
+                                                                    BackgroundColor="#E3E6E8"
+                                                                    CornerRadius="5"/>
+                                                            <BoxView BackgroundColor="#707070" HeightRequest="1" Margin="0"/>
+                                                            <Label Text="Tipo PDF"
+                                                                   TextColor="#707070"
+                                                                   HorizontalOptions="Center"                                                               
+                                                                   HorizontalTextAlignment="Center" 
+                                                                   />
+
+                                                            <Entry x:Name="selectedCarEntry"
+                                                                   Focused="selectedCarEntry_Focused"  
+                                                                   Text="Documento do veiculo"
+                                                                   TextColor="#A8A7A7"
+                                                                   PlaceholderColor="#A8A7A7"
+                                                                   HorizontalOptions="FillAndExpand"
+                                                                   FontSize="15"                                                                   
+                                                                   ClearButtonVisibility="WhileEditing"
+                                                                  />
+
+
+                                                            <Entry x:Name="selectedHabEntry"
+                                                                   Focused="selectedHabEntry_Focused"  
+                                                                   Text="Habilitação"
+                                                                   TextColor="#A8A7A7"
+                                                                   PlaceholderColor="#A8A7A7"
+                                                                   HorizontalOptions="FillAndExpand"
+                                                                   FontSize="15"                                                                   
+                                                                   ClearButtonVisibility="WhileEditing"
+                                                                  />
+
+
+                                                        </StackLayout> 
+                                                    </StackLayout>
+                                                </Frame>
+                                            </StackLayout>
+                                        </Frame>
+                                        <Frame 
+                                           x:Name="frameCadPasseiro"
+                                           BackgroundColor="#E8ECEF" 
+                                           HasShadow="False"
+                                           BorderColor="#707070" >
+
+                                            <StackLayout>
+                                                <Entry Placeholder="Razão social (Nome da empresa)"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   ReturnType="Next"/>  
+                                                
+                                                   <Entry Placeholder="CNPJ"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#A8A7A7"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"
+                                                   Keyboard="Numeric"
+                                                   ReturnType="Next"/>
+                                                <Label Text="Logo da empresa:" FontSize="15" />
+                                                <Frame
+                                                    BackgroundColor="#E8ECEF" 
+                                                    HasShadow="False"
+                                                    BorderColor="#707070" >
+                                                    <StackLayout>
+                                                        <StackLayout Spacing="0" HorizontalOptions="FillAndExpand" Margin="0" Padding="0">
+                                                            <Button x:Name="butArquivop"
+                                                                    ImageSource ="Anexo.png"
+                                                                    Clicked="DocVeiculop_onClicked"
+                                                                    Text="Selecione a logo da empresa" 
+                                                                    FontSize="13"
+                                                                    FontAttributes="Bold"
+                                                                    TextColor="#707070"
+                                                                    BackgroundColor="#E3E6E8"
+                                                                    CornerRadius="5"/>
+                                                            <BoxView BackgroundColor="#707070" HeightRequest="1" Margin="0"/>
+                                                            <Label Text="Tipo PNG"
+                                                                   TextColor="#707070"
+                                                                   HorizontalOptions="Center"                                                               
+                                                                   HorizontalTextAlignment="Center" 
+                                                                   />
+
+                                                            <Entry x:Name="selectedPassEntryp"
+                                                                   Focused="selectedCarEntryp_Focused"  
+                                                                   Text="Logo marca:"
+                                                                   TextColor="#A8A7A7"
+                                                                   PlaceholderColor="#A8A7A7"
+                                                                   HorizontalOptions="FillAndExpand"
+                                                                   FontSize="15"                                                                   
+                                                                   ClearButtonVisibility="WhileEditing"
+                                                                  />
+                                                        </StackLayout>
+                                                    </StackLayout>
+                                                </Frame>
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>                                   
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+                <!---->
+            </Frame>
+            <!---->
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

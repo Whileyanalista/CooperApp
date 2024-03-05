@@ -5,6 +5,12 @@ C:\Dev\CooperApp\CooperApp\CooperApp\bin\Debug\netstandard2.0\CooperApp.pdb
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.csproj.AssemblyReference.cache
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\Cadastro.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\Login.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Inicio.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Parceiro.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Perfil.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\View\ViewHome.xaml.g.cs
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.csproj.CoreCompileInputs.cache
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.AssemblyInfoInputs.cache
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.AssemblyInfo.cs
@@ -12,8 +18,4 @@ C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.dll
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\ref\CooperApp.dll
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.pdb
-C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Inicio.xaml.g.cs
-C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Parceiro.xaml.g.cs
-C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\TabbedPage\Perfil.xaml.g.cs
-C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\View\ViewHome.xaml.g.cs
-C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\Pages\Login.xaml.g.cs
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\View\ViewParceiro.xaml.g.cs
