@@ -78,7 +78,6 @@
                 </Frame>
                 <Label 
                         FontAttributes="Bold"
-                        HorizontalOptions="Center"
                         FontSize="21"
                         Padding="20"
                         Margin="-10"
@@ -123,12 +122,16 @@
                                  WidthRequest="350"
                                  Padding="30"
                                  >
+<<<<<<< HEAD
+                        <Entry Placeholder="Usuario"
+=======
                         <Entry Placeholder="E-mail"
                                TextColor="#707070"
                                PlaceholderColor="#A8A7A7"
                                HorizontalOptions="FillAndExpand"
                                FontSize="17"
                                ReturnType="Next"/>
+>>>>>>> Coop_Cadastro
 
                         <Entry Placeholder="Senha"
                                TextColor="#707070"
@@ -151,6 +154,10 @@
                         <StackLayout 
                             Margin="0,15,0,0"
                             Orientation="Horizontal" 
+<<<<<<< HEAD
+                            HorizontalOptions="Center"
+                            
+=======
                             HorizontalOptions="Center">
                             
                             <Label Text="Não tem cadastro?" 
@@ -160,15 +167,21 @@
                                    TextColor="#3611FC"
                                    FontSize="15"/>
 
+>>>>>>> Coop_Cadastro
                         </StackLayout>
                         
                         <Label Text="Redefinir senha." 
                                TextColor="#3611FC" 
                                HorizontalOptions="Center"
                                FontSize="15"/>
+<<<<<<< HEAD
+                    </StackLayout>
+                    
+=======
                         
                     </StackLayout>                   
                 </StackLayout>
+>>>>>>> Coop_Cadastro
             </Frame>
             <!---->
         </RelativeLayout>

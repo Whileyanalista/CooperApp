@@ -31,16 +31,19 @@ namespace CooperApp.Pages
 
         }
 
-        private async void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
+        private void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
         {
             // Verifica se o deslocamento horizontal é maior que o valor máximo permitido
             if (e.ScrollY > maxVerticalScrollDistance)
             {
-               await scrollcad.ScrollToAsync(scrollcad.ScrollX, maxVerticalScrollDistance, false);
+                scrollcad.ScrollToAsync(scrollcad.ScrollX, maxVerticalScrollDistance, false);
 
             }
 
         }
+
+
+
 
         private void EntryCPF_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -179,7 +182,7 @@ namespace CooperApp.Pages
             }
             catch (Exception ex)
             {
-                // Trate exceções, se necessário
+                
             }
         }
 
@@ -234,7 +237,7 @@ namespace CooperApp.Pages
         private void Rdtipousuario_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
             rdchekbox();
-        }       
+        }
     }
 
 }

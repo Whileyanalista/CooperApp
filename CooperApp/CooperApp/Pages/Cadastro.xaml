@@ -10,8 +10,7 @@
                 HeightRequest="300"
                 RelativeLayout.WidthConstraint="{
                 ConstraintExpression Type=RelativeToParent, 
-                Property=Width, Factor=1
-                }" />
+                Property=Width, Factor=1}" />
 
             <!--Logo-->
             <StackLayout
@@ -22,13 +21,14 @@
                         Factor=0.5,
                         Constant=-110
                     }"
-                    RelativeLayout.YConstraint="{
+                RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
                         ElementName=BanerSuper,
                         Property=Y,
                         Factor=1,
                         Constant=20
-                    }">
+                    }"
+            >
                 <Frame
                     CornerRadius="100"
                     HeightRequest="110"
@@ -69,15 +69,14 @@
                         ElementName=BanerSuper,
                         Property=Y,
                         Factor=1,
-                        Constant=30
+                        Constant= 30
                             }">
-                            <Image Source="Logo.png"
+                        <Image Source="Logo.png"
                             Margin="-23"
                         />
                     </Frame>
                 </Frame>
                 <Label
-                    HorizontalOptions="Center"
                     FontAttributes="Bold"
                     FontSize="21"
                     Padding="20"
@@ -91,7 +90,7 @@
             Geral-->
             <Frame
                 CornerRadius="100"
-                HeightRequest="810"
+                HeightRequest="800"
                 BackgroundColor="#E8ECEF"
                 VerticalOptions="FillAndExpand"
                 RelativeLayout.WidthConstraint="{
@@ -104,11 +103,16 @@
                     ElementName=BanerSuper,
                     Property=Y,
                     Factor=1,
+<<<<<<< HEAD
                     Constant=220                
                 }">
+=======
+                    Constant=220}">
+
+>>>>>>> 00aa89dbf5b7941c34b6840c36254df8cda762af
                 <!--Conteudo-->
                 <StackLayout>
-                    <Label Text="Bem-vindo!"
+                    <Label Text="Bem vindo!"
                         Padding="0,50,0,0"
                         HorizontalTextAlignment="Center"
                         FontAttributes="Bold"
@@ -121,33 +125,39 @@
                         VerticalOptions="Center"
                         HorizontalOptions="Center" />
 
+<<<<<<< HEAD
                     <ScrollView x:Name="scrollcad">
                         <StackLayout Padding="15,25,15,50">
                             <Label Text="Dados Pessoas:" FontSize="15" />
                             <Frame x:Name="framecad"
                                 HasShadow="False"
                             Margin="0,0,0,10"
+=======
+                    <ScrollView>
+                        <StackLayout Padding="15,10,15,50">
+                            <Label Text="Dados Pessoas:" FontSize="15" />
+                            <Frame HasShadow="False"
+>>>>>>> 00aa89dbf5b7941c34b6840c36254df8cda762af
                             BorderColor="#707070"
                             BackgroundColor="#E8ECEF"
                             VerticalOptions="FillAndExpand">
                                 <StackLayout>
                                     <Entry Placeholder="Nome Completo"
                                        TextColor="#707070"
-                                       PlaceholderColor="#A8A7A7"
+                                       PlaceholderColor="#707070"
                                        HorizontalOptions="FillAndExpand"
                                        FontSize="17"
                                            ReturnType="Next"/>
 
                                     <Entry Placeholder="E-mail"
-                                       TextColor="#707070"
-                                       PlaceholderColor="#A8A7A7"
-                                       HorizontalOptions="FillAndExpand"
-                                       FontSize="17"
-                                       ReturnType="Next"/>
+                               TextColor="#707070"
+                               PlaceholderColor="#707070"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="17"/>
 
                                     <Entry Placeholder="Condominio"
                                        TextColor="#707070"
-                                       PlaceholderColor="#A8A7A7"
+                                       PlaceholderColor="#707070"
                                        HorizontalOptions="FillAndExpand"
                                        FontSize="17"
                                            ReturnType="Next"/>
@@ -155,23 +165,22 @@
                                     <Entry Placeholder="CEP"
                                            Keyboard="Numeric"
                                            TextColor="#707070"
-                                           PlaceholderColor="#A8A7A7"
+                                           PlaceholderColor="#707070"
                                            HorizontalOptions="FillAndExpand"
                                            FontSize="17"
                                            ReturnType="Next"/>  
 
                                     <Entry Placeholder="RUA"
-                                           TextColor="#707070"
-                                           PlaceholderColor="#A8A7A7"
-                                           HorizontalOptions="FillAndExpand"
-                                           FontSize="17"
-                                           ReturnType="Next"/>
+                               TextColor="#707070"
+                               PlaceholderColor="#707070"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="17"/>
 
                                     <Entry  x:Name="EntryCel"
                                             TextChanged="EntryCel_TextChanged"
                                             Placeholder="Cel (##)#####-####"
                                             TextColor="#707070"
-                                            PlaceholderColor="#A8A7A7"
+                                            PlaceholderColor="#707070"
                                             HorizontalOptions="FillAndExpand"
                                             Keyboard="Telephone"
                                             FontSize="17"
@@ -183,7 +192,7 @@
                                            TextChanged="EntryCPF_TextChanged"
                                            Placeholder="CPF ###.###-#####"
                                            TextColor="#707070"
-                                           PlaceholderColor="#A8A7A7"
+                                           PlaceholderColor="#707070"
                                            HorizontalOptions="FillAndExpand"
                                            FontSize="17"
                                            Keyboard="Numeric"
@@ -195,37 +204,42 @@
                                            BorderColor="#707070"                            
                                            >
                                         <StackLayout>
+                                            <Entry Placeholder="Usuario"
+                                                   TextColor="#707070"
+                                                   PlaceholderColor="#707070"
+                                                   HorizontalOptions="FillAndExpand"
+                                                   FontSize="17"/>
+
                                             <Entry Placeholder="Senha"
                                                    TextColor="#707070"
-                                                   PlaceholderColor="#A8A7A7"
-                                                   HorizontalOptions="FillAndExpand"
-                                                   FontSize="17"
-                                                   ReturnType="Next"/>
-
-                                            <Entry Placeholder="Confirmar Senha"
-                                                   TextColor="#707070"
-                                                   PlaceholderColor="#A8A7A7"
+                                                   PlaceholderColor="#707070"
                                                    HorizontalOptions="FillAndExpand"
                                                    FontSize="17"
                                                    ReturnType="Next"/>
                                             
                                         </StackLayout>
                                     </Frame>
+<<<<<<< HEAD
                                     <StackLayout Orientation="Horizontal" 
                                                  Margin="0,10">
-                                        <RadioButton x:Name="rdlusuario" CheckedChanged="Rdtipousuario_CheckedChanged"/>
+                                        <RadioButton x:Name="rdlusuario" CheckedChanged="rdtipousuario_CheckedChanged"/>
+=======
+                                    <StackLayout Orientation="Horizontal" Margin="0,10">
+                                        <CheckBox />
+>>>>>>> 00aa89dbf5b7941c34b6840c36254df8cda762af
                                         <Label Text="Passageiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
-                                        <RadioButton x:Name="rdmotorista" CheckedChanged="Rdtipousuario_CheckedChanged"/>
+                                        <RadioButton x:Name="rdmotorista" CheckedChanged="rdtipousuario_CheckedChanged"/>
                                         <Label Text="Motorista"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
-                                        <RadioButton x:Name="rdparceiro" CheckedChanged="Rdtipousuario_CheckedChanged"/>
+                                        <RadioButton x:Name="rdparceiro" CheckedChanged="rdtipousuario_CheckedChanged"/>
                                         <Label Text="Parceiro"
                                                VerticalOptions="Center"
                                                FontSize="17"/>
                                     </StackLayout>
+<<<<<<< HEAD
                                     <StackLayout >
                                         <Button x:Name="btCadastro"
                                                 Margin="0,0,0,20"
@@ -372,6 +386,13 @@
                                             </StackLayout>
                                         </Frame>
                                     </StackLayout>                                   
+=======
+                                    <Button Text="Salvar"
+                                            FontAttributes="Bold"
+                                            TextColor="#707070"
+                                            BackgroundColor="#9DAF71"
+                                            CornerRadius="50"/>
+>>>>>>> 00aa89dbf5b7941c34b6840c36254df8cda762af
                                 </StackLayout>
                             </Frame>
                         </StackLayout>

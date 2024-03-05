@@ -4,7 +4,7 @@
     xmlns:controleView="clr-namespace:CooperApp.View"             
     x:Class="CooperApp.Paginas.TabbedPage.Inicio"
     Title="Inicio"
-    IconImageSource="Inicio.png"
+    IconImageSource="home.png"
 >
     <ContentPage.Content>
 
@@ -17,13 +17,12 @@
                          Property=Width, Factor=1                    
                      }" />
             <!--Logo-->
-            <StackLayout  
-                RelativeLayout.XConstraint="{
+            <StackLayout  RelativeLayout.XConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=-140
+                        Constant=-150
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -31,7 +30,8 @@
                         Property=Y,
                         Factor=1,
                         Constant=20
-                    }">
+                    }"
+                             >
                 <Frame
                     CornerRadius="100"
                     HeightRequest="110"
@@ -45,7 +45,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=1
+                        Constant=-60
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -65,7 +65,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=1
+                        Constant=-60
                     }"
                         RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -74,34 +74,38 @@
                         Factor=1,
                         Constant=30
                             }">
-                            <Image Source="Logo.png"
+                        <Image Source="Logo.png"
                             Margin="-23"
                            />
                     </Frame>
                 </Frame>
                 <Label 
-                    FontAttributes="Bold"
-                    HorizontalOptions="Center"
-                    FontSize="21"
-                    Padding="20"
-                    Margin="-10"
-                    TextColor="#707070"
-                    Text="Ponto de Atendimento"                    
-                />
+                        FontAttributes="Bold"
+                        FontSize="21"
+                        Padding="20"
+                        Margin="-10"
+                        TextColor="#707070"
+                        Text="Ponto de Atendimento"                    
+                           />
             </StackLayout>
             <!---->
-            <!--Freme
-            Geral-->            
+            <!--Freime-->
+
+            
             <Frame  
                 x:Name="bakgroud"
                 CornerRadius="100"
-                HeightRequest="810"
                 BackgroundColor="#E8ECEF"
                 RelativeLayout.WidthConstraint="{
                         ConstraintExpression Type=RelativeToParent, 
                         Property=Width, 
                         Factor=1                    
-                    }"                    
+                    }"
+                    RelativeLayout.HeightConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, 
+                         Factor=2                    
+                     }"
                     RelativeLayout.YConstraint="{
                     ConstraintExpression Type=RelativeToParent,
                     ElementName=BanerSuper,
@@ -109,7 +113,7 @@
                     Factor=1,
                     Constant=220
                 }">                
-                <StackLayout >
+                <StackLayout Padding="0,0,0,155">
                     <ScrollView>
                         <!--Carde tela Home-->
                         <StackLayout Padding="0,70">
@@ -132,18 +136,18 @@
                         DistanciaPa = "PA a 1k"
                         corStatus = "#9DAF71"/>
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
+                        PontoAtendimento = "PA Restaurante do Maninho" 
                         QuantidadePassageiro = "1 passageiro no PA" 
                         MotoristaPa = "Motorista a 100m" 
                         DistanciaPa = "PA a 1k"
                         corStatus = "#9DAF71"/>
-
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
+                        PontoAtendimento = "PA Atacadão Laudo de Freitas" 
                         QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m" 
-                        DistanciaPa = "PA a 1k"
-                        corStatus = "#9DAF71"/>
+                        MotoristaPa = "Motorista a 500m" 
+                        DistanciaPa = "PA a 10k"
+                        corStatus = "#9DAF71"/>  
+                            
                         </StackLayout>
                         <!---->
                     </ScrollView>
@@ -152,11 +156,11 @@
             <!---->
             <!--Freime icon-->
             <Frame
-                    CornerRadius="20"
-                    BackgroundColor="#FFFFFF"
-                    HeightRequest="100"
+                    CornerRadius="15"
+                    BackgroundColor="White"
+                    HeightRequest="70"
                     WidthRequest="350"
-                    Padding="0"
+                    Padding="10"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     RelativeLayout.XConstraint="{
@@ -164,164 +168,88 @@
                     ElementName=bakgroud, 
                     Property=Width,
                     Factor=0.5,
-                    Constant= -165
-                    }"
+                    Constant= -185
+                }"
                     RelativeLayout.YConstraint="{
                     ConstraintExpression Type=RelativeToView,
                     ElementName=bakgroud,
                     Property=Y,
                     Factor=1,
                     Constant=-20
-                
-                }">               
-                <StackLayout HeightRequest="100">
-                    <StackLayout>
-                        <Grid HorizontalOptions="Center" ColumnSpacing="50" Padding="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="50" />
-                                <RowDefinition />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                            </Grid.ColumnDefinitions>
-                            <!-- Primeira Grid Collum/Row -->
-                            <Image Source="Motorista.png"                            
+                }">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <!-- Primeira Grid Collum/Row -->
+                    <Image Source="Volante.png"
                             Grid.Row="0"
-                            Grid.Column="0"                            
-                            Aspect="AspectFit"                             
+                            Grid.Column="0"
+                            Aspect="AspectFit"
                         />
-                            <StackLayout>
-                                <Frame Grid.Row="0"
-                               Grid.Column="0"
-                               CornerRadius="100"
-                               HorizontalOptions="End"
-                               VerticalOptions="Start"  
-                               Padding="1"
-                               Margin="0,0,-6,0"
-                               >
-                                    <Frame 
-                                BorderColor="White"  
-                                HasShadow="False"   
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                HeightRequest="25"
-                                WidthRequest="25"
+                    <Frame Grid.Row="0"
+                            Grid.Column="0"
+                            CornerRadius="100"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Padding="5">
+                        <Frame BorderColor="White"
+                                HeightRequest="30"
+                                WidthRequest="30"
                                 CornerRadius="100"
-                                Padding="0"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                Margin="-10"
+                                Padding="2"
                                 BackgroundColor="#2E6012">
-                                        <Label 
-                                    Text="10"
+                            <Label Text="10"
                                     FontSize="10"
                                     TextColor="White"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"
                                     HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center" 
-                                   />
-                                    </Frame>
-                                </Frame>
-                            </StackLayout>
-                            <Label Text="Motoristas"
+                                    VerticalTextAlignment="Center" />
+                        </Frame>
+                    </Frame>
+                    <Label Text="Motoristas Online"
                             FontAttributes="Bold"
                             Grid.Row="1"
                             Grid.Column="0"
                             HorizontalTextAlignment="Center"
-                            FontSize="13"
+                            FontSize="10"
                         />
-                            <!---->
-                            <!--Segunda Grid Collum/Row-->
-                            <Image Source="Usuario.png"
+                    <!---->
+                    <!--Segunda Grid Collum/Row-->
+                    <Image Source="Usuariol.png"
                             Grid.Row="0"
                             Grid.Column="1"
                             Aspect="AspectFit"
                         />
-                            <StackLayout
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"                        
-                        Margin="0,0,-7,0"
-                        Padding="0"
-                        >
-                                <Frame
-                            BorderColor="White"
-                            HasShadow="False"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            HeightRequest="25"
-                            WidthRequest="25"                            
-                            CornerRadius="100"
-                            Padding="1"
-                            Margin="0"
-                            >
-                                    <Frame 
-                                BorderColor="White"
-                                HasShadow="False"
-                                HeightRequest="25"
-                                WidthRequest="25"
-                                CornerRadius="100"
-                                VerticalOptions="Center"
-                                HorizontalOptions="Center"
-                                Margin="0"
-                                Padding="0"
-                                BackgroundColor="#2E6012">
-                                        <Label 
-                                    Text="40"
-                                    FontSize="10"
-                                    TextColor="White"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center"
-                            />
-                                    </Frame>
-                                </Frame>
-                            </StackLayout >
-                            <Label Text="Usuários"
-                            FontAttributes="Bold"
-                            Grid.Row="1"
+                    <Frame Grid.Row="0"
                             Grid.Column="1"
-                            HorizontalTextAlignment="Center"
-                            FontSize="13"
-                        />
-                            <!--Terceira Grid Collum/Row-->
-                            <Image Source="ponteiro.png"
-                            Grid.Row="0"
-                            Grid.Column="2"
-                            Aspect="AspectFit"
-                        />
-                            <StackLayout
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"
-                        Padding="0"
-                        Margin="0,0,-2,0"
-                        >
-                                <Frame
-                            Grid.Row="2"
-                            Grid.Column="2"
                             CornerRadius="100"
                             HorizontalOptions="End"
                             VerticalOptions="Start"
-                            Padding="1"
+                            Padding="5"
                         >
-                                    <Frame
+                        <Frame
                                 BorderColor="White"
-                                HasShadow="False"
-                                HeightRequest="25"
-                                WidthRequest="25"
+                                HeightRequest="30"
+                                WidthRequest="30"
                                 CornerRadius="100"
                                 HorizontalOptions="End"
                                 VerticalOptions="Start"
-                                Margin="0"
-                                Padding="0"
+                                Margin="-10"
+                                Padding="2"
                                 BackgroundColor="#2E6012"
-                                   >
-                                        <Label
-                                    Text="1"
+                            >
+                            <Label Text="40"
                                     FontSize="10"
                                     TextColor="White"
                                     HorizontalOptions="Center"
@@ -329,21 +257,59 @@
                                     HorizontalTextAlignment="Center"
                                     VerticalTextAlignment="Center"
                                 />
-                                    </Frame>
-                                </Frame>
-                            </StackLayout>
-                            <Label Text="Pontos"
+                        </Frame>
+                    </Frame>
+                    <Label Text="Usuários Online"
+                            FontAttributes="Bold"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            HorizontalTextAlignment="Center"
+                            FontSize="10"
+                        />
+                    <!--Terceira Grid Collum/Row-->
+                    <Image Source="ponteiro.png"
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Aspect="AspectFit"
+                        />
+                    <Frame Grid.Row="0"
+                            Grid.Column="2"
+                            CornerRadius="100"
+                            HorizontalOptions="End"
+                            VerticalOptions="Start"
+                            Padding="5"
+                        >
+                        <Frame
+                                BorderColor="White"
+                                HeightRequest="30"
+                                WidthRequest="30"
+                                CornerRadius="100"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"
+                                Margin="-9"
+                                Padding="2"
+                                BackgroundColor="#2E6012"
+                            >
+                            <Label
+                                    Text="7"
+                                    FontSize="10"
+                                    TextColor="White"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center"
+                                />
+                        </Frame>
+                    </Frame>
+                    <Label Text="Pontos Ativos"
                             FontAttributes="Bold"
                             Grid.Row="1"
                             Grid.Column="2"
                             HorizontalTextAlignment="Center"
-                            FontSize="13"
-                            />
-                            <!---->                           
-                        </Grid>                       
-                    </StackLayout>
-                   
-                </StackLayout>
+                            FontSize="10"
+                        />
+                    <!---->
+                </Grid>
             </Frame>
             <!---->
         </RelativeLayout>
