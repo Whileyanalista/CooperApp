@@ -18,3 +18,4 @@ C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.dll
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\ref\CooperApp.dll
 C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\CooperApp.pdb
+C:\Dev\CooperApp\CooperApp\CooperApp\obj\Debug\netstandard2.0\View\ViewParceiro.xaml.g.cs

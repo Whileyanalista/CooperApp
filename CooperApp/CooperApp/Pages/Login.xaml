@@ -78,6 +78,7 @@
                 </Frame>
                 <Label 
                         FontAttributes="Bold"
+                        HorizontalOptions="Center"
                         FontSize="21"
                         Padding="20"
                         Margin="-10"
