@@ -23,10 +23,6 @@ AndroidDexTool=d8
 AndroidLinkTool=
 AndroidEnableProfiledAot=false
 AndroidInstallAfterBuild=True
-<<<<<<< HEAD
-AndroidSessionId=7a3088df-36b4-4fea-9005-c6f76c817225
-=======
-AndroidSessionId=e3b5784d-58bb-491a-a4ce-d4f1fb1a230c
->>>>>>> Coop_Login
+AndroidSessionId=2e8c21f7-55f4-4136-851e-992d927c95d5
 BuildConfiguration=Debug
 TemplateName={c9e5eea5-ca05-42a1-839b-61506e0a37df}
