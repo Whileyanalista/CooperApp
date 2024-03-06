@@ -359,7 +359,7 @@
 
                                                             <Entry x:Name="selectedPassEntryp"
                                                                    Focused="selectedCarEntryp_Focused"  
-                                                                   Text="Logo marca:"
+                                                                   Text="Logomarca:"
                                                                    TextColor="#A8A7A7"
                                                                    PlaceholderColor="#A8A7A7"
                                                                    HorizontalOptions="FillAndExpand"
