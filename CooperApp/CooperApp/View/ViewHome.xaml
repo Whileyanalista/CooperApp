@@ -12,11 +12,7 @@
                         <BoxView Color="{Binding corStatus}"
                         HeightRequest="150"
                         WidthRequest="10"
-<<<<<<< HEAD
-                        Margin="20,0,0,5" 
-=======
                         Margin="20,0,0,0" 
->>>>>>> Coop_Login
                         />
                     </Grid>                    
                     <!--Estrutura do card-->
@@ -41,7 +37,7 @@
                                     >
                                     <StackLayout Orientation="Horizontal"  
                                                  Padding="0">
-                                        <Image Source="Volante.png"
+                                        <Image Source="Motorista.png"
                                                HeightRequest="20" 
                                                />
                                         <Label Text="{Binding MotoristaPa}"

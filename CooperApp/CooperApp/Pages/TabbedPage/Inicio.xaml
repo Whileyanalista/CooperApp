@@ -4,7 +4,7 @@
     xmlns:controleView="clr-namespace:CooperApp.View"             
     x:Class="CooperApp.Paginas.TabbedPage.Inicio"
     Title="Inicio"
-    IconImageSource="home.png"
+    IconImageSource="Inicio.png"
 >
     <ContentPage.Content>
 
@@ -188,7 +188,7 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <!-- Primeira Grid Collum/Row -->
-                    <Image Source="Volante.png"
+                    <Image Source="Motorista.png"
                             Grid.Row="0"
                             Grid.Column="0"
                             Aspect="AspectFit"
@@ -226,7 +226,7 @@
                         />
                     <!---->
                     <!--Segunda Grid Collum/Row-->
-                    <Image Source="Usuariol.png"
+                    <Image Source="Usuario.png"
                             Grid.Row="0"
                             Grid.Column="1"
                             Aspect="AspectFit"
