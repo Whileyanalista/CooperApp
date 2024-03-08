@@ -190,32 +190,28 @@
                     Factor=1,
                     Constant=-20
                 }">
-                <StackLayout>
+                <StackLayout Spacing="0" Margin="10">
                     <StackLayout Orientation="Horizontal" VerticalOptions="Start">
                         <Frame BackgroundColor="#11A557"
-                            VerticalOptions="Start"
-                            HeightRequest="12"
-                            WidthRequest="12"                               
+                            VerticalOptions="Center"
+                            HeightRequest="6"
+                            WidthRequest="6"                               
                             CornerRadius="100"
-                            Padding="5"
-                            Margin="15,0,0,0">
+                            Padding="5">
                             <Image Source="Check.png"/>
                         </Frame>
                         <Label Text="Usuario Ativo" 
                            TextColor="#11A557" 
                            FontAttributes="Bold"
                            VerticalOptions="Start"
-                           Margin="5,0,0,0"
-                           FontSize="16"/>
+                           FontSize="15"/>
                     </StackLayout>
                     <Label Text="Whiley.analista@gmail.com"
-                           FontSize="20"
-                           Margin="20,0,0,0"
+                           FontSize="17"
                            TextColor="#707070"                           
                            FontAttributes="Bold"/>
                     <Label Text="Passageiro"
-                           FontSize="15"
-                           Margin="20,0,0,0"
+                           FontSize="17"
                            TextColor="#707070" />
                 </StackLayout>
             </Frame>
