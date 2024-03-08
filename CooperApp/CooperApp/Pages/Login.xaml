@@ -144,7 +144,7 @@
                                 BackgroundColor="#9DAF71"
                                 Margin="0,30,0,0"
                                 WidthRequest="5"
-                                HeightRequest="60"
+                                HeightRequest="50"
                                 CornerRadius="50"
                             />
 

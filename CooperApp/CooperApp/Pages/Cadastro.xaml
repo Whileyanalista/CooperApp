@@ -152,15 +152,15 @@
                                        FontSize="17"
                                            ReturnType="Next"/>
 
-                                    <Entry Placeholder="CEP"
-                                           Keyboard="Numeric"
+                                    <Entry Placeholder="Bairo"
+                                           Keyboard="Text"
                                            TextColor="#707070"
                                            PlaceholderColor="#A8A7A7"
                                            HorizontalOptions="FillAndExpand"
                                            FontSize="17"
                                            ReturnType="Next"/>  
 
-                                    <Entry Placeholder="RUA"
+                                    <Entry Placeholder="Rua"
                                            TextColor="#707070"
                                            PlaceholderColor="#A8A7A7"
                                            HorizontalOptions="FillAndExpand"
