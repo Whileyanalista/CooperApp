@@ -1,36 +1,22 @@
 # CooperApp
 Aplicativo que auxilia com a logistica de fluxo de passageiro
 
-História tela Perfil:
+História tela Auterar Senha:
 
 Está tela retorna para o usuário:
-Cards com dados condicionados dos cadastros preciamente realizados.
+Cards com dados de opção para qual tipo de validação deve ser utilizado na redefinição 
+da senha WhatSapp ou E-mail.
+E posteriormente campo para sinalizar o codigo enviado.
 
 Leyout superior:
 cards contendo:
 Leabel com titulo e retorno das informações referente ao dados solicitados
-(Informaçõs condicionadas como objetivo de sinalizar qual tipo de informão prposta no local)
-Divisoria por uma linha e uma sinaliação de alteração.
+(Informaçõs condicionadas como objetivo de sinalizar qual tipo de Ação prposta no local)
+Codigo a ser colocado surge de forma dinamica quando uma sinaliação e cklicada.
 
 Cards:
-Endereço:
-Contendo Rua/Bairo/cep/
-Campo Condominio.
-Nome do condominio
+logo 
+sinalização da proposta de qual local o carde envia os dados
 
-Dados Pessoas:
-Email:
-E-meil completo
-Celular:
-Numero de celular
-Senha:
-contendo senha (camuflada)
-
-Dados:
-Para motorista:
-Placa/modelo/cor
-Para Logista:
-Nome da loja/CNPJ
-Arquivo:
-Dinamico conforme seu usuario.
+Campo de imput do codigo aparece de forma dinamica
 
