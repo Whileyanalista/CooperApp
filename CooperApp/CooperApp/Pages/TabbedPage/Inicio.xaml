@@ -112,69 +112,78 @@
                 <StackLayout >
                     <ScrollView>
                         <!--Carde tela Home-->
-                        <StackLayout Padding="0,70">
+                        <StackLayout Padding="0,70,0,70">
+                            
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Gênova" 
-                        QuantidadePassageiro = "2 passageiros no PA" 
-                        MotoristaPa = "Motorista a 1k" 
-                        DistanciaPa = "PA a 1m"
-                        corStatus = "#9DAF71"/>
+                                PontoAtendimento = "PA Gênova" 
+                                QuantidadePassageiro = "2 passageiros no PA" 
+                                MotoristaPa = "Motorista a 1k" 
+                                DistanciaPa = "PA a 1m"
+                                corStatus = "#9DAF71"
+                            />                            
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Estação do Metrô" 
-                        QuantidadePassageiro = "3 passageiros no PA" 
-                        MotoristaPa = "Sem motorista" 
-                        DistanciaPa = "PA a 2m"
-                        corStatus = "Gray"/>
+                                PontoAtendimento = "PA Estação do Metrô" 
+                                QuantidadePassageiro = "3 passageiros no PA" 
+                                MotoristaPa = "Sem motorista" 
+                                DistanciaPa = "PA a 2m"
+                                corStatus = "Gray"
+                            />
+                            
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
-                        QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m" 
-                        DistanciaPa = "PA a 1k"
-                        corStatus = "#9DAF71"/>
+                                PontoAtendimento = "PA Vila Romana" 
+                                QuantidadePassageiro = "1 passageiro no PA" 
+                                MotoristaPa = "Motorista a 100m" 
+                                DistanciaPa = "PA a 1k"
+                                corStatus = "#9DAF71"
+                            />
+                            
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
-                        QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m" 
-                        DistanciaPa = "PA a 1k"
-                        corStatus = "#9DAF71"/>
+                                PontoAtendimento = "PA Vila Romana" 
+                                QuantidadePassageiro = "1 passageiro no PA" 
+                                MotoristaPa = "Motorista a 100m" 
+                                DistanciaPa = "PA a 1k"
+                                corStatus = "#9DAF71"
+                            />
 
                             <controleView:ViewHome 
-                        PontoAtendimento = "PA Vila Romana" 
-                        QuantidadePassageiro = "1 passageiro no PA" 
-                        MotoristaPa = "Motorista a 100m" 
-                        DistanciaPa = "PA a 1k"
-                        corStatus = "#9DAF71"/>
+                                PontoAtendimento = "PA Vila Romana" 
+                                QuantidadePassageiro = "1 passageiro no PA" 
+                                MotoristaPa = "Motorista a 100m" 
+                                DistanciaPa = "PA a 1k"
+                                corStatus = "#9DAF71"
+                            />
                         </StackLayout>
                         <!---->
                     </ScrollView>
                 </StackLayout>
             </Frame>
             <!---->
-            <!--Freime icon-->
+            <!--Frame Icon Menu-->
             <Frame
-                    CornerRadius="20"
-                    BackgroundColor="#FFFFFF"
-                    HeightRequest="100"
-                    WidthRequest="350"
-                    Padding="0"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    RelativeLayout.XConstraint="{
-                    ConstraintExpression Type=RelativeToParent, 
-                    ElementName=bakgroud, 
-                    Property=Width,
-                    Factor=0.5,
-                    Constant= -170
-                    }"
-                    RelativeLayout.YConstraint="{
-                    ConstraintExpression Type=RelativeToView,
-                    ElementName=bakgroud,
-                    Property=Y,
-                    Factor=1,
-                    Constant=-20
+                CornerRadius="20"
+                BackgroundColor="#FFFFFF"
+                HeightRequest="100"
+                WidthRequest="350"
+                Padding="0"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                RelativeLayout.XConstraint="{
+                ConstraintExpression Type=RelativeToParent, 
+                ElementName=bakgroud, 
+                Property=Width,
+                Factor=0.5,
+                Constant= -170
+                }"
+                RelativeLayout.YConstraint="{
+                ConstraintExpression Type=RelativeToView,
+                ElementName=bakgroud,
+                Property=Y,
+                Factor=1,
+                Constant=-20
                 
-                }">               
-                <StackLayout HeightRequest="100">
+                }"
+                >               
+                <StackLayout >
                     <StackLayout>
                         <Grid HorizontalOptions="Center" ColumnSpacing="50" Padding="10">
                             <Grid.RowDefinitions>
@@ -186,166 +195,178 @@
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
+                            
                             <!-- Primeira Grid Collum/Row -->
                             <Image Source="Motorista.png"                            
-                            Grid.Row="0"
-                            Grid.Column="0"                            
-                            Aspect="AspectFit"                             
-                        />
+                                Grid.Row="0"
+                                Grid.Column="0"                            
+                                Aspect="AspectFit"                             
+                            />
+                            <Label Text="Motoristas"
+                                FontAttributes="Bold"
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                HorizontalTextAlignment="Center"
+                                FontSize="13"
+                            />
+                            <!--CirculoM-->
                             <StackLayout>
-                                <Frame Grid.Row="0"
-                               Grid.Column="0"
-                               CornerRadius="100"
-                               HorizontalOptions="End"
-                               VerticalOptions="Start"  
-                               Padding="1"
-                               Margin="0,0,-6,0"
+                               <Frame Grid.Row="0"
+                                   Grid.Column="0"
+                                   CornerRadius="100"
+                                   HorizontalOptions="End"
+                                   VerticalOptions="Start"  
+                                   Padding="1"
+                                   Margin="0,0,-6,0"
                                >
                                     <Frame 
-                                BorderColor="White"  
-                                HasShadow="False"   
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"
-                                HeightRequest="25"
-                                WidthRequest="25"
-                                CornerRadius="100"
-                                Padding="0"
-                                BackgroundColor="#2E6012">
+                                        BorderColor="White"  
+                                        HasShadow="False"   
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        HeightRequest="25"
+                                        WidthRequest="25"
+                                        CornerRadius="100"
+                                        Padding="0"
+                                        BackgroundColor="#2E6012"
+                                        >
                                         <Label 
-                                    Text="10"
-                                    FontSize="10"
-                                    TextColor="White"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center" 
-                                   />
+                                            Text="10"
+                                            FontSize="10"
+                                            TextColor="White"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center" 
+                                       />
                                     </Frame>
                                 </Frame>
                             </StackLayout>
-                            <Label Text="Motoristas"
-                            FontAttributes="Bold"
-                            Grid.Row="1"
-                            Grid.Column="0"
-                            HorizontalTextAlignment="Center"
-                            FontSize="13"
-                        />
-                            <!---->
+                            <!--CirculoM-->                            
+                            <!-- Primeira Grid Collum/Row -->
+                            
                             <!--Segunda Grid Collum/Row-->
                             <Image Source="Usuario.png"
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            Aspect="AspectFit"
-                        />
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Aspect="AspectFit"
+                            />
+                            <Label Text="Usuários"
+                                FontAttributes="Bold"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalTextAlignment="Center"
+                                FontSize="13"
+                                />
+                            <!--CirculoU-->
                             <StackLayout
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"                        
-                        Margin="0,0,-7,0"
-                        Padding="0"
-                        >
-                                <Frame
-                            BorderColor="White"
-                            HasShadow="False"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"
-                            HeightRequest="25"
-                            WidthRequest="25"                            
-                            CornerRadius="100"
-                            Padding="1"
-                            Margin="0"
-                            >
-                                    <Frame 
-                                BorderColor="White"
-                                HasShadow="False"
-                                HeightRequest="25"
-                                WidthRequest="25"
-                                CornerRadius="100"
-                                VerticalOptions="Center"
-                                HorizontalOptions="Center"
-                                Margin="0"
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="End"
+                                VerticalOptions="Start"                        
+                                Margin="0,0,-7,0"
                                 Padding="0"
-                                BackgroundColor="#2E6012">
-                                        <Label 
-                                    Text="40"
-                                    FontSize="10"
-                                    TextColor="White"
+                            >
+                                <Frame
+                                    BorderColor="White"
+                                    HasShadow="False"
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center"
-                            />
+                                    HeightRequest="25"
+                                    WidthRequest="25"                            
+                                    CornerRadius="100"
+                                    Padding="1"
+                                    Margin="0"
+                                >
+                                    <Frame 
+                                        BorderColor="White"
+                                        HasShadow="False"
+                                        HeightRequest="25"
+                                        WidthRequest="25"
+                                        CornerRadius="100"
+                                        VerticalOptions="Center"
+                                        HorizontalOptions="Center"
+                                        Margin="0"
+                                        Padding="0"
+                                        BackgroundColor="#2E6012"
+                                     >
+                                        <Label 
+                                            Text="40"
+                                            FontSize="10"
+                                            TextColor="White"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                        />
                                     </Frame>
                                 </Frame>
                             </StackLayout >
-                            <Label Text="Usuários"
-                            FontAttributes="Bold"
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            HorizontalTextAlignment="Center"
-                            FontSize="13"
-                        />
+                            <!--CirculoU-->
+                            <!--Segunda Grid Collum/Row-->
+
                             <!--Terceira Grid Collum/Row-->
                             <Image Source="ponteiro.png"
-                            Grid.Row="0"
-                            Grid.Column="2"
-                            Aspect="AspectFit"
-                        />
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Aspect="AspectFit"
+                            />
+                            <Label Text="Pontos"
+                                FontAttributes="Bold"
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                HorizontalTextAlignment="Center"
+                                FontSize="13"
+                            />
+                            <!--CirculoP-->
                             <StackLayout
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"
-                        Padding="0"
-                        Margin="0,0,-2,0"
-                        >
-                                <Frame
-                            Grid.Row="2"
-                            Grid.Column="2"
-                            CornerRadius="100"
-                            HorizontalOptions="End"
-                            VerticalOptions="Start"
-                            Padding="1"
-                        >
-                                    <Frame
-                                BorderColor="White"
-                                HasShadow="False"
-                                HeightRequest="25"
-                                WidthRequest="25"
-                                CornerRadius="100"
+                                Grid.Row="0"
+                                Grid.Column="2"
                                 HorizontalOptions="End"
                                 VerticalOptions="Start"
-                                Margin="0"
                                 Padding="0"
-                                BackgroundColor="#2E6012"
-                                   >
-                                        <Label
-                                    Text="1"
-                                    FontSize="10"
-                                    TextColor="White"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center"
-                                />
+                                Margin="0,0,-2,0"
+                            >
+                                <Frame
+                                    Grid.Row="2"
+                                    Grid.Column="2"
+                                    CornerRadius="100"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Start"
+                                    Padding="1"
+                                >
+                                    <Frame
+                                        BorderColor="White"
+                                        HasShadow="False"
+                                        HeightRequest="25"
+                                        WidthRequest="25"
+                                        CornerRadius="100"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Start"
+                                        Margin="0"
+                                        Padding="0"
+                                        BackgroundColor="#2E6012"
+                                    >
+                                    <Label
+                                        Text="1"
+                                        FontSize="10"
+                                        TextColor="White"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center"
+                                    />
                                     </Frame>
                                 </Frame>
                             </StackLayout>
-                            <Label Text="Pontos"
-                            FontAttributes="Bold"
-                            Grid.Row="1"
-                            Grid.Column="2"
-                            HorizontalTextAlignment="Center"
-                            FontSize="13"
-                            />
+                            <!--PirculoP-->
+                            <!--Terceira Grid Collum/Row-->
                             <!---->                           
                         </Grid>                       
-                    </StackLayout>
-                   
+                    </StackLayout>                   
                 </StackLayout>
             </Frame>
-            <!---->
+            <!--Frame Icon Menu-->
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

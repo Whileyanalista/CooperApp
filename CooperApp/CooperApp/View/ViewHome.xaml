@@ -6,66 +6,86 @@
              >
   <ContentView.Content>
       <StackLayout BindingContext="{x:Reference viewHome}">
-            <Frame Padding="0" Margin="20,20,20,0" CornerRadius="15" BackgroundColor="White">
-                <StackLayout  Orientation="Horizontal" Spacing="0">
-                    <Grid BackgroundColor="White" Padding="0">
-                        <BoxView Color="{Binding corStatus}"
-                        HeightRequest="150"
-                        WidthRequest="10"
+            <Frame Padding="0"  
+                   Margin="20,20,20,0" 
+                   CornerRadius="15" 
+                   BackgroundColor="White"
+                   >
+                <StackLayout  
+                    Orientation="Horizontal">
+                    <!--BoxCor-->
+                    <Grid BackgroundColor="White">
+                        <BoxView Color="{Binding corStatus}"                           
+                            WidthRequest="10"
                         />
-                    </Grid>                    
+                    </Grid>
+                    <!--BoxCor-->
                     <!--Estrutura do card-->
                     <Frame 
                         HasShadow="False"
                         BackgroundColor="White"
-                        HorizontalOptions="Center"
-                        Padding="8"
+                        HorizontalOptions="FillAndExpand"  
+                        Padding="15"
                         >
                         <StackLayout >
                             <Label Text="{Binding PontoAtendimento}"
                                    TextColor="#5E5C5C"
-                                   FontSize="19" 
-                                   FontAttributes="Bold"/>
+                                   FontSize="16" 
+                                   FontAttributes="Bold"
+                                   />
                             <BoxView 
-                                BackgroundColor="Gray"
-                                HeightRequest="2" />
+                                    BackgroundColor="Gray"
+                                    HeightRequest="2" 
+                                />
                             <Label 
                                 Text="{Binding QuantidadePassageiro}"
-                                TextColor="#707070"
-                                FontSize="16"
-                                FontAttributes="None"/>
+                                    TextColor="#707070"
+                                    FontSize="15"
+                                />
+                            <!--Motorista/Ponteiro-->
                             <StackLayout Orientation="Horizontal">
                                 <Frame BackgroundColor="#F4F8FC" 
-                                       HasShadow="False"  
-                                       CornerRadius="10"
+                                           HasShadow="False"                                      
+                                           HorizontalOptions="FillAndExpand"
+                                           Margin="0"
+                                           Padding="5"
                                        >
                                     <StackLayout Orientation="Horizontal"
-                                                 HeightRequest="1"
-                                                 WidthRequest="200">
-                                        <Image Source="Motorista.png" HeightRequest="30"/>
+                                                 HeightRequest="1">
+                                        <Image Source="Motorista.png" 
+                                                    HeightRequest="30"
+                                               />
                                         <Label Text="{Binding MotoristaPa}"
-                                                FontAttributes="Bold"
-                                                FontSize="15"
-                                                VerticalOptions="Center" 
+                                                    FontAttributes="Bold"
+                                                    FontSize="16"
+                                                    VerticalOptions="Center"
+                                                    HorizontalOptions="FillAndExpand"
                                                />
                                     </StackLayout>
                                 </Frame>
-                                <Frame BackgroundColor="#F4F8FC"
+                                <Frame
+                                    BackgroundColor="#F4F8FC"
                                         HorizontalOptions="FillAndExpand"
                                         HasShadow="False"
-                                        CornerRadius="10"                                        
+                                        Margin="0"
+                                        Padding="5"
                                         >
-                                    <StackLayout Orientation="Horizontal">
+                                    <StackLayout 
+                                        Orientation="Horizontal">
                                         <Image Source="Ponteiro.png"
-                                            HeightRequest="30" />
+                                            HeightRequest="30" 
+                                        />
                                         <Label 
                                             Text="{Binding DistanciaPa}"
                                             FontAttributes="Bold"
-                                            FontSize="15"
-                                            VerticalOptions="Center" />
+                                            FontSize="16"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="Center"
+                                        />
                                     </StackLayout>
                                 </Frame>
                             </StackLayout>
+                            <!--Motorista/Ponteiro-->
                         </StackLayout>
                     </Frame>
                 </StackLayout>

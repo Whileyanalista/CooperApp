@@ -19,7 +19,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-                        Constant=-90
+                        Constant=-70
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -83,7 +83,7 @@
                         Padding="20"
                         Margin="-10"
                         TextColor="#707070"
-                        Text="Tela de Login"                    
+                        Text="Login"                    
                            />
             </StackLayout>
             <!---->
