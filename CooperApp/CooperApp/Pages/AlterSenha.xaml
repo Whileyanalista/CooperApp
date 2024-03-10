@@ -18,11 +18,7 @@
                         ElementName=BanerSuper, 
                         Property=Width,
                         Factor=0.5,
-<<<<<<< HEAD
-                        Constant=-90
-=======
                         Constant=-100
->>>>>>> 138b4c904b42459b986015ec7005cd18a8aea015
                     }"
                     RelativeLayout.YConstraint="{
                         ConstraintExpression Type=RelativeToView,
@@ -86,11 +82,7 @@
                         Padding="20"
                         Margin="-10"
                         TextColor="#707070"
-<<<<<<< HEAD
-                        Text="Reset de senha"                    
-=======
-                        Text="Redefinir Senha"                    
->>>>>>> 138b4c904b42459b986015ec7005cd18a8aea015
+                        Text="Reset de senha" 
                            />
             </StackLayout>
             <!---->

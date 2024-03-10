@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CooperApp.Pages.AlterSenhaCad"
+             Title="Cadastro nova senha">
+    <ContentPage.Content>
+        <RelativeLayout VerticalOptions="Start" >
+            <Frame x:Name="BanerSuper"
+                    BackgroundColor="#9DAF71"
+                    HeightRequest="300"
+                    RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1                    
+                     }" />
+            <!--Logo-->
+            <StackLayout  RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-100
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }"
+                             >
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-1
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30
+                            }">
+                        <Image Source="Logo.png"
+                            Margin="-23"
+                           />
+                    </Frame>
+                </Frame>
+                <Label 
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        FontSize="21"
+                        Padding="20"
+                        Margin="-10"
+                        TextColor="#707070"
+                        Text="Reset de senha"                    
+                           />
+            </StackLayout>
+            <!---->
+            <!--Freme
+            Geral-->
+            <Frame
+                CornerRadius="100"                
+                HeightRequest="810"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                    
+                    }"                   
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220
+                }">
+
+                <StackLayout Padding="0,20,0,0" Margin="30" Spacing="20" >
+                    <StackLayout HorizontalOptions="Center"
+                                 WidthRequest="350"
+                                 Padding="30"
+                                 >
+                        <Label Text="Esqueceu a senha!"                           
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#707070"
+                        />
+
+                        <Label Padding="0,60,0,20"
+                           Text="Favor informe os dados de Senha, para alteração."
+                           FontSize="20"
+                           TextColor="#707070"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           
+                        />
+
+                        <Entry Placeholder="Nova Senha"
+                               TextColor="#707070"
+                               PlaceholderColor="#A8A7A7"
+                               HorizontalOptions="FillAndExpand"
+                               FontSize="17"
+                               ReturnType="Next"/>
+
+                        <Entry Placeholder="Repita a senha"
+                               TextColor="#707070"
+                               PlaceholderColor="#A8A7A7"
+                               HorizontalOptions="FillAndExpand"                               
+                               IsPassword="True"
+                               FontSize="17"
+                               ReturnType="Next"/>
+
+                        <Button Text="LOGIN" 
+                                FontAttributes="Bold"
+                                TextColor="#707070"
+                                BackgroundColor="#9DAF71"
+                                Margin="0,30,0,0"
+                                WidthRequest="5"
+                                HeightRequest="50"
+                                CornerRadius="50"
+                            />
+
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <!---->
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
