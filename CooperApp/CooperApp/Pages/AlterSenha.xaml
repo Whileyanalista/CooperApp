@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CooperApp.Pages.AlterSenha"
+             Title="Alterar Senha">
+    <ContentPage.Content>
+        <RelativeLayout VerticalOptions="Start" >
+            <Frame x:Name="BanerSuper"
+                    BackgroundColor="#9DAF71"
+                    HeightRequest="300"
+                    RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1                    
+                     }" />
+            <!--Logo-->
+            <StackLayout  RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-100
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }"
+                             >
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-1
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30
+                            }">
+                        <Image Source="Logo.png"
+                            Margin="-23"
+                           />
+                    </Frame>
+                </Frame>
+                <Label 
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        FontSize="21"
+                        Padding="20"
+                        Margin="-10"
+                        TextColor="#707070"
+                        Text="Redefinir Senha"                    
+                           />
+            </StackLayout>
+            <!---->
+            <!--Freme
+            Geral-->
+            <Frame
+                CornerRadius="100"                
+                HeightRequest="810"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                    
+                    }"                   
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220
+                }">
+                
+                <!--Geral bood-->
+                <StackLayout Padding="0,50,0,0" Margin="30" Spacing="20">
+                    <Label Text="Esqueceu a senha!"                           
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold"
+                           FontSize="25"
+                           TextColor="#707070"
+                     />
+
+                    <Label Padding="0,60,0,0"
+                           Text="Favor informe como deseja receber o código de segurança."
+                           FontSize="20"
+                           TextColor="#707070"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                    />
+
+                    <!--Frame cadEmail-->
+                    <Frame x:Name="cadEmail" 
+                           Opacity="0"
+                           CornerRadius="10"
+                           Padding="10"
+                           HeightRequest="150"                           
+                           >
+                        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+                            <Label 
+                               Text="Favor informar código enviado ao seu e-mail."
+                               WidthRequest="290"
+                               FontSize="15"
+                               TextColor="#707070"
+                                />
+
+                            <Entry Placeholder="Codigo"
+                                WidthRequest="150"   
+                                TextColor="#707070"
+                                PlaceholderColor="#A8A7A7"
+                                HorizontalOptions="Start"
+                                FontSize="17"/>
+                        </StackLayout>
+                    </Frame>
+                    <!--Frame cadEmail-->
+
+                    <!--Frame cadWats-->
+                    <Frame x:Name="cadWats"
+                           Opacity="0"
+                           TranslationY="-90"
+                           CornerRadius="10"
+                           Padding="10"
+                           HeightRequest="150"                           
+                           >
+                        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+                            <Label 
+                               Text="Favor informar código enviado ao seu WhatsApp."
+                               WidthRequest="290"
+                               FontSize="15"
+                               TextColor="#707070"
+                                />
+
+                            <Entry Placeholder="Codigo"
+                                WidthRequest="150"   
+                                TextColor="#707070"
+                                PlaceholderColor="#A8A7A7"
+                                HorizontalOptions="Start"
+                                FontSize="17"/>
+                        </StackLayout>
+                    </Frame>
+                    <!--Frame cadWats-->
+
+                    <!--Frame E-mail-->
+                    <Frame x:Name="framEmail"
+                            TranslationY="-350"
+                            HorizontalOptions="FillAndExpand"                                   
+                            BackgroundColor="#E8ECEF" 
+                            HasShadow="False"
+                            BorderColor="#707070"
+                            Padding="5"
+                            HeightRequest="60"
+                            CornerRadius="10">
+                        <StackLayout 
+                                Orientation="Horizontal"
+                                VerticalOptions="Center"
+                                HorizontalOptions="FillAndExpand"
+                                Padding="5,0,0,0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="framEmail_OnFrameTapped" />
+                            </Frame.GestureRecognizers>
+                            <Image Source="email.png" 
+                                        WidthRequest="50"
+                                        />
+                            <StackLayout Spacing="0">
+                                <Label Text="E-mail" 
+                                            FontSize="18"
+                                            TextColor="#707070"                           
+                                            FontAttributes="Bold"
+                                        />
+                                <Label Text="No e-mail w****es@gmail.com"
+                                            FontSize="16" 
+                                            TextColor="#8D8888"
+                                            />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame >
+                    <!--Frame E-mail-->
+                    
+                    <!--Frame framWhats-->
+                    <Frame x:Name="framWhats"
+                            TranslationY="-350"
+                            HorizontalOptions="FillAndExpand"                                   
+                            BackgroundColor="#E8ECEF" 
+                            HasShadow="False"
+                            BorderColor="#707070"
+                            Padding="5"
+                            HeightRequest="60"
+                            CornerRadius="10">
+                        <StackLayout 
+                                Orientation="Horizontal"
+                                VerticalOptions="Center"
+                                HorizontalOptions="FillAndExpand"
+                                Padding="5,0,0,0">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="framWhats_OnFrameTapped" />
+                            </Frame.GestureRecognizers>
+                            <Image Source="Whatsapp.png" 
+                                        WidthRequest="50"
+                                        />
+                            <StackLayout Spacing="0">
+                                <Label Text="WhatsApp" 
+                                            FontSize="18"
+                                            TextColor="#707070"                           
+                                            FontAttributes="Bold"
+                                        />
+                                <Label Text="No celular terminado em 0513"
+                                            FontSize="16" 
+                                            TextColor="#8D8888"
+                                            />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame >
+                </StackLayout>
+                <!--Geral bood-->
+            </Frame>
+            <!---->
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

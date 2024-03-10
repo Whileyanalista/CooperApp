@@ -192,27 +192,32 @@
                 }">
                 <StackLayout Spacing="0" Margin="10">
                     <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+                        
                         <Frame BackgroundColor="#11A557"
                             VerticalOptions="Center"
                             HeightRequest="6"
                             WidthRequest="6"                               
                             CornerRadius="100"
                             Padding="5">
-                            <Image Source="Check.png"/>
+                            <Image Source="Check.png"
+                                   />
                         </Frame>
                         <Label Text="Usuario Ativo" 
                            TextColor="#11A557" 
                            FontAttributes="Bold"
                            VerticalOptions="Start"
-                           FontSize="15"/>
+                           FontSize="15"
+                               />
                     </StackLayout>
                     <Label Text="Whiley.analista@gmail.com"
                            FontSize="17"
                            TextColor="#707070"                           
-                           FontAttributes="Bold"/>
+                           FontAttributes="Bold"
+                           />
                     <Label Text="Passageiro"
                            FontSize="17"
-                           TextColor="#707070" />
+                           TextColor="#707070" 
+                           />
                 </StackLayout>
             </Frame>
             <!--Freime Apresenta-->

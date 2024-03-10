@@ -164,7 +164,7 @@
                     ElementName=bakgroud, 
                     Property=Width,
                     Factor=0.5,
-                    Constant= -165
+                    Constant= -170
                     }"
                     RelativeLayout.YConstraint="{
                     ConstraintExpression Type=RelativeToView,

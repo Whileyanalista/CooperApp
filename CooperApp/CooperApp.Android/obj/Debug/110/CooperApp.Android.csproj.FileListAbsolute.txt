@@ -646,3 +646,15 @@ C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\usu
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xhdpi\usuario.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\usuario.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxxhdpi\usuario.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-hdpi\email.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-ldpi\email.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\email.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xhdpi\email.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\email.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxxhdpi\email.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxxhdpi\whatsapp.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-hdpi\whatsapp.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-ldpi\whatsapp.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\whatsapp.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xhdpi\whatsapp.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\whatsapp.png
