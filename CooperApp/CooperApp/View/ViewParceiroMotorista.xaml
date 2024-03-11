@@ -4,7 +4,7 @@
              x:Class="CooperApp.View.ViewParceiroMotorista"
              x:Name="viewParceiroMotorista">
   <ContentView.Content>
-        <StackLayout Padding="0,50,0,0" >
+        <StackLayout Padding="0,20,0,0" >
             <StackLayout BindingContext="{x:Reference viewParceiroMotorista}">
                 <!--Carde tela Home-->
                 <StackLayout>

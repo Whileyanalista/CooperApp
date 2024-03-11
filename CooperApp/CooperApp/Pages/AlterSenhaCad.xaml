@@ -105,10 +105,9 @@
                     Constant=220
                 }">
 
-                <StackLayout Padding="0,20,0,0" Margin="30" Spacing="20" >
-                    <StackLayout HorizontalOptions="Center"
+                <StackLayout Margin="30" >
+                    <StackLayout HorizontalOptions="FillAndExpand"
                                  WidthRequest="350"
-                                 Padding="30"
                                  >
                         <Label Text="Esqueceu a senha!"                           
                            HorizontalTextAlignment="Center"

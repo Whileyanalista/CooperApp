@@ -299,7 +299,6 @@
                                                                    ClearButtonVisibility="WhileEditing"
                                                                   />
 
-
                                                             <Entry x:Name="selectedHabEntry"
                                                                    Focused="selectedHabEntry_Focused"  
                                                                    Text="Habilitação"
@@ -309,8 +308,6 @@
                                                                    FontSize="15"                                                                   
                                                                    ClearButtonVisibility="WhileEditing"
                                                                   />
-
-
                                                         </StackLayout> 
                                                     </StackLayout>
                                                 </Frame>

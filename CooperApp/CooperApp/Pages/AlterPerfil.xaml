@@ -109,7 +109,7 @@
                         <StackLayout Padding="0,100" Margin="30" Spacing="50">
                             <Frame BackgroundColor ="#EEEEEE" BorderColor="#707070" CornerRadius="10">
                                 <StackLayout>
-                                    <Entry Placeholder="Rua colônia Boa União"
+                                    <Entry Placeholder="Rua Santa Lúcia"
                                            TextColor="#707070"
                                            PlaceholderColor="#A8A7A7"
                                            HorizontalOptions="FillAndExpand"
@@ -117,14 +117,14 @@
                                            ReturnType="Next"/>
 
 
-                                    <Entry Placeholder="Vila de Abrantes"
+                                    <Entry Placeholder="Boa Vista"
                                            TextColor="#707070"
                                            PlaceholderColor="#A8A7A7"
                                            HorizontalOptions="FillAndExpand"
                                            FontSize="17"
                                            ReturnType="Next"/>
 
-                                    <Label Text="-Rua colônia Boa União, Vila de Abrant,..." 
+                                    <Label Text="-Rua Santa Lúcia, Boa Vista,..." 
                                            FontSize="16"
                                            TextColor="#707070" 
                                            Padding="0,0,0,10"
@@ -151,14 +151,14 @@
                             </Frame>
                             <Frame BackgroundColor ="#EEEEEE" BorderColor="#707070" CornerRadius="10">
                                 <StackLayout>
-                                    <Entry Placeholder="Antonio Ferreira Junior"
+                                    <Entry Placeholder="Mário Martin Castro"
                                        TextColor="#707070"
                                        PlaceholderColor="#A8A7A7"
                                        HorizontalOptions="FillAndExpand"
                                        FontSize="17"
                                            ReturnType="Next"/>
 
-                                    <Entry Placeholder="whiley.analista@gmail.co"
+                                    <Entry Placeholder="martincast@megasurgical.com.br"
                                        TextColor="#707070"
                                        PlaceholderColor="#A8A7A7"
                                        HorizontalOptions="FillAndExpand"
@@ -166,7 +166,7 @@
                                        ReturnType="Next"/>
 
                                     <Entry  x:Name="EntryCel"
-                                            Placeholder="(71)99117-0413"
+                                            Placeholder="(95) 98595-1831"
                                             TextColor="#707070"
                                             PlaceholderColor="#A8A7A7"
                                             HorizontalOptions="FillAndExpand"
@@ -177,7 +177,7 @@
                                     
                                     <Entry x:Name="EntryCPF"
                                            MaxLength="14"
-                                           Placeholder="123.456-7891"
+                                           Placeholder="370.344.727-34"
                                            TextColor="#707070"
                                            PlaceholderColor="#A8A7A7"
                                            HorizontalOptions="FillAndExpand"
@@ -185,7 +185,7 @@
                                            Keyboard="Numeric"
                                            ReturnType="Next"/>
 
-                                    <Label Text="-Antonio Ferreira Junior,whiley.analista@gmail.c..." FontSize="16"  TextColor="#707070"/>
+                                    <Label Text="-Mário Martin Castro,martincast@megasurgical.com.br..." FontSize="16"  TextColor="#707070"/>
                                     <Entry Placeholder="*****"
                                             TextColor="#707070"
                                             PlaceholderColor="#A8A7A7"
@@ -246,20 +246,20 @@
                             
                             <Frame BackgroundColor="#11A557"
                             VerticalOptions="Center"
-                            HeightRequest="6"
-                            WidthRequest="6"                               
+                            HeightRequest="10"
+                            WidthRequest="10"                               
                             CornerRadius="100"
                             Padding="5">
                                 <Image Source="Check.png"/>
                             </Frame>
-                            <Label Text="Usuario Ativo" 
+                            <Label Text="Ativo" 
                            TextColor="#11A557" 
                            FontAttributes="Bold"
                            VerticalOptions="Start"
                            FontSize="15"
                                    />
                         </StackLayout>
-                        <Label Text="Whiley.analista@gmail.com"
+                        <Label Text="martincast@megasurgical.com.br"
                            FontSize="17"
                            TextColor="#707070"                           
                            FontAttributes="Bold"

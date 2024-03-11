@@ -82,7 +82,7 @@
                         Padding="20"
                         Margin="-10"
                         TextColor="#707070"
-                        Text="Reset de senha" 
+                        Text="Alterar senha" 
                            />
             </StackLayout>
             <!---->
@@ -138,6 +138,7 @@
                                 />
 
                             <Entry Placeholder="Codigo"
+                                Keyboard="Numeric"
                                 WidthRequest="150"   
                                 TextColor="#707070"
                                 PlaceholderColor="#A8A7A7"
@@ -164,6 +165,7 @@
                                 />
 
                             <Entry Placeholder="Codigo"
+                                Keyboard="Numeric"
                                 WidthRequest="150"   
                                 TextColor="#707070"
                                 PlaceholderColor="#A8A7A7"

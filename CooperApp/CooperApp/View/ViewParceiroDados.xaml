@@ -8,14 +8,14 @@
         <StackLayout BindingContext="{x:Reference viewParceiro}">
             <Frame BackgroundColor ="#EEEEEE" BorderColor="#707070" CornerRadius="10">
                 <StackLayout>
-                    <Label Text="Dados Parceiros" FontSize="18"
+                    <Label Text="{Binding DadosParceiros}" FontSize="18"
                                TextColor="#707070"                           
                                FontAttributes="Bold"
                                />
                     <Label Text="{Binding ComponenteParceiro}" FontSize="16"
                                TextColor="#707070" 
                                />
-                    <Label Text="Arquivos" FontSize="18"
+                    <Label Text="{Binding TipoDado}" FontSize="18"
                                TextColor="#707070"                           
                                FontAttributes="Bold"
                                />
@@ -31,7 +31,6 @@
                     <Label Text="Alterar" TextColor="#11A557" 
                                FontAttributes="Bold" 
                                FontSize="15"
-                               Margin="0,10,0,0"
                                />
                 </StackLayout>
             </Frame>

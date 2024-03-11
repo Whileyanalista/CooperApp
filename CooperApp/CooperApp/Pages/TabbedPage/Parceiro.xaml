@@ -84,7 +84,7 @@
                     Padding="20"
                     Margin="-10"
                     TextColor="#707070"
-                    Text="Motoristas"                    
+                    Text="Parceiro"                    
                 />
             </StackLayout>
             <!---->
@@ -105,11 +105,20 @@
                     Factor=1,
                     Constant=220
                 }">
-                <ScrollView>
-                    <StackLayout Padding="0,0,0,70">
+                <ScrollView Padding="0,50,0,70">
+                    <StackLayout >
+                        <controleView:ViewParceiroMotorista 
+                            corStatusMotorista =  "#005DA5"
+                            motoristaNome ="Martin Caleb Brito"
+                            corSheck = "#005DA5"
+                            corStatusText ="#005DA5"
+                            statusMotoristas ="Pendente"
+                            dadosMotorista ="Onix, ABC9543, Vermelho..."
+                        />
+                        
                         <controleView:ViewParceiroMotorista 
                             corStatusMotorista =  "#9DAF71"
-                            motoristaNome ="Antônio Carlos dos Santos"
+                            motoristaNome ="Manoel Rafael Fernandes"
                             corSheck = "#9DAF71"
                             corStatusText ="#9DAF71"
                             statusMotoristas ="Ativo"
@@ -118,11 +127,20 @@
 
                         <controleView:ViewParceiroMotorista 
                             corStatusMotorista =  "#005DA5"
-                            motoristaNome ="Carlos Alberto de Lima"
+                            motoristaNome ="Diego Luiz Nathan da Costa"
                             corSheck = "#005DA5"
                             corStatusText ="#005DA5"
                             statusMotoristas ="Pendente"
                             dadosMotorista ="Onix, ABC9543, Vermelho..."
+                        />
+
+                        <controleView:ViewParceiroMotorista 
+                            corStatusMotorista =  "#9E9E9E"
+                            motoristaNome ="Vicente Yuri Bryan Fogaça"
+                            corSheck = "#9E9E9E"
+                            corStatusText ="#9E9E9E"
+                            statusMotoristas ="Bloqueado"
+                            dadosMotorista ="Forde Kar, ABC5678, Vermelho..."
                         />
 
                         <controleView:ViewParceiroMotorista 
@@ -136,7 +154,7 @@
 
                         <controleView:ViewParceiroMotorista 
                             corStatusMotorista =  "#9DAF71"
-                            motoristaNome ="Marcos de Oliveira Paulino"
+                            motoristaNome ="Mário Martin Castro"
                             corSheck = "#9DAF71"
                             corStatusText ="#9DAF71"
                             statusMotoristas ="Ativo"
