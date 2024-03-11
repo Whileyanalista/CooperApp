@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CooperApp.View.ViewParceiroMotorista"
+             x:Name="viewParceiroMotorista">
+  <ContentView.Content>
+        <StackLayout Padding="0,50,0,0" >
+            <StackLayout BindingContext="{x:Reference viewParceiroMotorista}">
+                <!--Carde tela Home-->
+                <StackLayout>
+                    <StackLayout>
+                        <Frame Padding="0"  
+                                    Margin="10,0,10,0" 
+                                    CornerRadius="15" 
+                                    BackgroundColor="White"
+                                    >
+                            <StackLayout Orientation="Horizontal" >
+                                <!--BoxCor-->
+                                <Grid BackgroundColor="White">
+                                    <BoxView Color="{Binding corStatusMotorista}" 
+                                             WidthRequest="10"/>
+                                </Grid>
+                                <!--BoxCor-->
+                                <!--Estrutura do card-->
+                                <Frame HasShadow="False"
+                                    BackgroundColor="White"
+                                    HorizontalOptions="FillAndExpand"  
+                                    Padding="15"
+                                    >
+                                    <StackLayout >
+                                        <Label Text="{Binding motoristaNome}"
+                                                TextColor="#5E5C5C"
+                                                FontSize="20" 
+                                                FontAttributes="Bold"
+                                                />
+                                        <BoxView BackgroundColor="Gray" HeightRequest="2"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame HeightRequest="54" 
+                                                    WidthRequest="54">
+                                                <Image Source="avatarperfil.png"/>
+                                            </Frame>
+                                            <StackLayout >
+                                                <StackLayout Orientation="Horizontal" 
+                                                            VerticalOptions="Start"
+                                                            Padding="5"
+                                                            >
+                                                    <Frame BackgroundColor ="{Binding corSheck}" 
+                                                            VerticalOptions="Center"
+                                                            HeightRequest="10"
+                                                            WidthRequest="10"                               
+                                                            CornerRadius="100"
+                                                            Padding="5"
+                                                    >
+                                                        <Image Source="Check.png"/>
+                                                    </Frame>
+                                                    <Label Text="{Binding statusMotoristas}" 
+                                                            TextColor="{Binding corStatusText}" 
+                                                            FontAttributes="Bold"
+                                                            VerticalOptions="Start"
+                                                            FontSize="16"
+                                                    />
+                                                </StackLayout>
+                                                <StackLayout Padding="5,0,0,0" Spacing="0">
+                                                    <Label Text="Dados do Motorista"
+                                                            TextColor="#707070"
+                                                            FontAttributes="Bold"
+                                                            FontSize="16"
+                                                    />
+                                                    <Label Text="{Binding dadosMotorista}"
+                                                            TextColor="#707070"
+                                                            FontSize="15"
+                                                    />
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+                <!---->
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

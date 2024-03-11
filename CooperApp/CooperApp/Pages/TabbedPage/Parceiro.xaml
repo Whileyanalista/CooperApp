@@ -1,14 +1,151 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controleView="clr-namespace:CooperApp.View"     
              x:Class="CooperApp.Paginas.TabbedPage.Parceiro"
              Title="Parceiro"
              IconImageSource="Parceiro.png">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Parceiro"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout VerticalOptions="Start" >
+            <Frame x:Name="BanerSuper"
+                    BackgroundColor="#9DAF71"
+                    HeightRequest="300"
+                    RelativeLayout.WidthConstraint="{
+                         ConstraintExpression Type=RelativeToParent, 
+                         Property=Width, Factor=1                    
+                     }" />
+            <!--Logo-->
+            <StackLayout  RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-70
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=20
+                    }"
+                             >
+                <Frame
+                    CornerRadius="100"
+                    HeightRequest="110"
+                    WidthRequest="110"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderColor="#2E6012"
+                    Padding="5"
+                    RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=-1
+                    }"
+                    RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=0.5,
+                        Constant=0
+                    }">
+                    <Frame
+                        CornerRadius="100"
+                        HeightRequest="80"
+                        WidthRequest="80"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        RelativeLayout.XConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        ElementName=BanerSuper, 
+                        Property=Width,
+                        Factor=0.5,
+                        Constant=1
+                    }"
+                        RelativeLayout.YConstraint="{
+                        ConstraintExpression Type=RelativeToView,
+                        ElementName=BanerSuper,
+                        Property=Y,
+                        Factor=1,
+                        Constant=30
+                            }">
+                        <Image Source="Logo.png"
+                            Margin="-23"
+                           />
+                    </Frame>
+                </Frame>
+                <Label 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="21"
+                    Padding="20"
+                    Margin="-10"
+                    TextColor="#707070"
+                    Text="Motoristas"                    
+                />
+            </StackLayout>
+            <!---->
+            <!--Freme Geral-->
+            <Frame
+                CornerRadius="100"                
+                HeightRequest="810"
+                BackgroundColor="#E8ECEF"
+                RelativeLayout.WidthConstraint="{
+                        ConstraintExpression Type=RelativeToParent, 
+                        Property=Width, 
+                        Factor=1                    
+                    }"                   
+                    RelativeLayout.YConstraint="{
+                    ConstraintExpression Type=RelativeToParent,
+                    ElementName=BanerSuper,
+                    Property=Y,
+                    Factor=1,
+                    Constant=220
+                }">
+                <ScrollView>
+                    <StackLayout Padding="0,0,0,70">
+                        <controleView:ViewParceiroMotorista 
+                            corStatusMotorista =  "#9DAF71"
+                            motoristaNome ="Antônio Carlos dos Santos"
+                            corSheck = "#9DAF71"
+                            corStatusText ="#9DAF71"
+                            statusMotoristas ="Ativo"
+                            dadosMotorista ="Fiat Siena, ABC1234, Branco..."
+                        />
+
+                        <controleView:ViewParceiroMotorista 
+                            corStatusMotorista =  "#005DA5"
+                            motoristaNome ="Carlos Alberto de Lima"
+                            corSheck = "#005DA5"
+                            corStatusText ="#005DA5"
+                            statusMotoristas ="Pendente"
+                            dadosMotorista ="Onix, ABC9543, Vermelho..."
+                        />
+
+                        <controleView:ViewParceiroMotorista 
+                            corStatusMotorista =  "#9E9E9E"
+                            motoristaNome ="Gustavo marinho de oliveira"
+                            corSheck = "#9E9E9E"
+                            corStatusText ="#9E9E9E"
+                            statusMotoristas ="Bloqueado"
+                            dadosMotorista ="Forde Kar, ABC5678, Vermelho..."
+                        />
+
+                        <controleView:ViewParceiroMotorista 
+                            corStatusMotorista =  "#9DAF71"
+                            motoristaNome ="Marcos de Oliveira Paulino"
+                            corSheck = "#9DAF71"
+                            corStatusText ="#9DAF71"
+                            statusMotoristas ="Ativo"
+                            dadosMotorista ="Fiat Siena, ABC1234, Branco..."
+                        />
+                    </StackLayout>
+                </ScrollView>                             
+            </Frame>
+            <!---->
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

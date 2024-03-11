@@ -658,3 +658,9 @@ C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-ldpi\wha
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\whatsapp.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xhdpi\whatsapp.png
 C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\whatsapp.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-hdpi\avatarperfil.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-ldpi\avatarperfil.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-mdpi\avatarperfil.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xhdpi\avatarperfil.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxhdpi\avatarperfil.png
+C:\Dev\CooperApp\CooperApp\CooperApp.Android\obj\Debug\110\res\drawable-xxxhdpi\avatarperfil.png

@@ -76,14 +76,14 @@
                     </Frame>
                 </Frame>
                 <Label 
-                        FontAttributes="Bold"
-                        HorizontalOptions="Center"
-                        FontSize="21"
-                        Padding="20"
-                        Margin="-10"
-                        TextColor="#707070"
-                        Text="Reset de senha"                    
-                           />
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontSize="21"
+                    Padding="20"
+                    Margin="-10"
+                    TextColor="#707070"
+                    Text="Alterar senha"                    
+                />
             </StackLayout>
             <!---->
             <!--Freme
@@ -122,14 +122,14 @@
                            FontSize="20"
                            TextColor="#707070"
                            VerticalOptions="Center"
-                           HorizontalOptions="Center"
-                           
+                           HorizontalOptions="Center"                           
                         />
 
                         <Entry Placeholder="Nova Senha"
                                TextColor="#707070"
                                PlaceholderColor="#A8A7A7"
                                HorizontalOptions="FillAndExpand"
+                               IsPassword="True"
                                FontSize="17"
                                ReturnType="Next"/>
 
@@ -141,15 +141,14 @@
                                FontSize="17"
                                ReturnType="Next"/>
 
-                        <Button Text="LOGIN" 
+                        <Button Text="SALVAR" 
                                 FontAttributes="Bold"
                                 TextColor="#707070"
                                 BackgroundColor="#9DAF71"
                                 Margin="0,30,0,0"
                                 WidthRequest="5"
                                 HeightRequest="50"
-                                CornerRadius="50"
-                            />
+                                CornerRadius="50"/>
 
                     </StackLayout>
                 </StackLayout>

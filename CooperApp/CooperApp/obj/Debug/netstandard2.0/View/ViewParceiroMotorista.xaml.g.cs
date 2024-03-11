@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.View.ViewParceiro.xaml", "View/ViewParceiro.xaml", typeof(global::CooperApp.View.ViewParceiro))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("CooperApp.View.ViewParceiroMotorista.xaml", "View/ViewParceiroMotorista.xaml", typeof(global::CooperApp.View.ViewParceiroMotorista))]
 
 namespace CooperApp.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\ViewParceiro.xaml")]
-    public partial class ViewParceiro : global::Xamarin.Forms.ContentView {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\ViewParceiroMotorista.xaml")]
+    public partial class ViewParceiroMotorista : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ContentView viewParceiro;
+        private global::Xamarin.Forms.ContentView viewParceiroMotorista;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ViewParceiro));
-            viewParceiro = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentView>(this, "viewParceiro");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ViewParceiroMotorista));
+            viewParceiroMotorista = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentView>(this, "viewParceiroMotorista");
         }
     }
 }

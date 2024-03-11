@@ -156,43 +156,38 @@
                             </StackLayout>
                         </Frame>
                         <controleView:ViewParceiro
-                        ComponenteParceiro="Fiat Siena, ABC1234, Branco.."
-                        TipoDoc="CNH, Documentos do veiculo.. "
-                        />
-                        <controleView:ViewParceiro
-                        ComponenteParceiro="Choping OutLaty Premium, 80000136489723"
-                        TipoDoc="JogoOutlaty.PNG "
-                        />
+                            ComponenteParceiro="Fiat Siena, ABC1234, Branco.."
+                            TipoDoc="CNH, Documentos do veiculo.. "
+                        />                        
                     </StackLayout>                              
                 </ScrollView>                
             </Frame>
             <!--Freme Geral-->
             <!--Freime Apresenta-->
             <Frame
-                    CornerRadius="20"
-                    BackgroundColor="#FFFFFF"
-                    HeightRequest="100"
-                    WidthRequest="350"
-                    Padding="10"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    RelativeLayout.XConstraint="{
-                    ConstraintExpression Type=RelativeToParent, 
-                    ElementName=bakgroud, 
-                    Property=Width,
-                    Factor=0.5,
-                    Constant= -185
-                    }"
-                    RelativeLayout.YConstraint="{
-                    ConstraintExpression Type=RelativeToView,
-                    ElementName=bakgroud,
-                    Property=Y,
-                    Factor=1,
-                    Constant=-20
+                CornerRadius="20"
+                BackgroundColor="#FFFFFF"
+                HeightRequest="100"
+                WidthRequest="350"
+                Padding="10"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                RelativeLayout.XConstraint="{
+                ConstraintExpression Type=RelativeToParent, 
+                ElementName=bakgroud, 
+                Property=Width,
+                Factor=0.5,
+                Constant= -185
+            }"
+            RelativeLayout.YConstraint="{
+            ConstraintExpression Type=RelativeToView,
+            ElementName=bakgroud,
+            Property=Y,
+            Factor=1,
+            Constant=-20
                 }">
                 <StackLayout Spacing="0" Margin="10">
-                    <StackLayout Orientation="Horizontal" VerticalOptions="Start">
-                        
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Start">                        
                         <Frame BackgroundColor="#11A557"
                             VerticalOptions="Center"
                             HeightRequest="6"
